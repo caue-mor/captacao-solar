@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH Energia Solar | Transforme Sol em Economia</title>
+    <meta name="description" content="SH Energia Solar - 5 anos transformando o sol em economia para centenas de clientes no Rio Grande do Sul. Solicite seu orçamento gratuito!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="https://shenergiasolar.com.br/wp-content/uploads/2023/11/SH-energia-solar-1024x1010.png" alt="SH Energia Solar" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#calculadora" class="nav-link">Calculadora</a></li>
+                <li><a href="#5anos" class="nav-link">5 Anos</a></li>
+                <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contato" class="nav-link nav-cta">Orçamento Grátis</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="hero-particles" id="particles"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-bolt"></i>
+                <span>5 Anos Iluminando o RS</span>
+            </div>
+            <h1 class="hero-title">
+                Transforme <span class="gradient-text">Sol</span> em
+                <span class="typing-text">Economia</span>
+            </h1>
+            <p class="hero-subtitle">
+                Reduza até <strong>80%</strong> da sua conta de luz com energia solar.
+                Mais de <strong>500 projetos</strong> instalados e centenas de clientes satisfeitos no Rio Grande do Sul.
+            </p>
+            <div class="hero-cta">
+                <a href="#calculadora" class="btn btn-primary">
+                    <i class="fas fa-calculator"></i>
+                    Calcular Economia
+                </a>
+                <a href="https://wa.me/5551984922780?text=Olá! Gostaria de solicitar um orçamento para energia solar." class="btn btn-orange" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Falar com Especialista
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-label">Projetos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-label">Anos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="80">0</span>
+                    <span class="stat-label">% Economia</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="solar-panel-3d">
+                <div class="panel-container">
+                    <div class="solar-panel">
+                        <div class="panel-grid">
+                            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                        </div>
+                    </div>
+                    <div class="sun-rays">
+                        <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="energy-flow">
+                        <div class="energy-particle"></div>
+                        <div class="energy-particle"></div>
+                        <div class="energy-particle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#calculadora" class="scroll-indicator">
+            <span>Calcule sua economia</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Calculadora Solar -->
+    <section class="calculator-section" id="calculadora">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-calculator"></i> Calculadora Solar</span>
+                <h2 class="section-title">Descubra sua <span class="gradient-text">Economia</span></h2>
+                <p class="section-subtitle">Calcule em segundos quanto você pode economizar com energia solar</p>
+            </div>
+
+            <div class="calculator-wrapper">
+                <div class="calculator-card">
+                    <div class="calc-step active" data-step="1">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <h3>Qual sua conta de luz mensal?</h3>
+                        </div>
+                        <div class="calc-input-group">
+                            <span class="input-prefix">R$</span>
+                            <input type="number" id="conta-luz" class="calc-input" placeholder="500" min="100" max="50000">
+                            <span class="input-suffix">/mês</span>
+                        </div>
+                        <div class="quick-values">
+                            <button class="quick-btn" data-value="300">R$ 300</button>
+                            <button class="quick-btn" data-value="500">R$ 500</button>
+                            <button class="quick-btn" data-value="800">R$ 800</button>
+                            <button class="quick-btn" data-value="1500">R$ 1.500</button>
+                            <button class="quick-btn" data-value="3000">R$ 3.000+</button>
+                        </div>
+                    </div>
+
+                    <div class="calc-step" data-step="2">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <h3>Tipo de instalação</h3>
+                        </div>
+                        <div class="type-options">
+                            <label class="type-option">
+                                <input type="radio" name="tipo" value="residencial" checked>
+                                <div class="option-card">
+                                    <i class="fas fa-home"></i>
+                                    <span>Residencial</span>
+                                </div>
+                            </label>
+                            <label class="type-option">
+                                <input type="radio" name="tipo" value="comercial">
+                                <div class="option-card">
+                                    <i class="fas fa-building"></i>
+                                    <span>Comercial</span>
+                                </div>
+                            </label>
+                            <label class="type-option">
+                                <input type="radio" name="tipo" value="rural">
+                                <div class="option-card">
+                                    <i class="fas fa-tractor"></i>
+                                    <span>Rural</span>
+                                </div>
+                            </label>
+                            <label class="type-option">
+                                <input type="radio" name="tipo" value="industrial">
+                                <div class="option-card">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Industrial</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="calc-btn" id="calcular-btn">
+                        <span>Calcular Economia</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="calculator-result" id="calc-result">
+                    <div class="result-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Sua Projeção de Economia</h3>
+                    </div>
+
+                    <div class="result-main">
+                        <div class="economy-circle">
+                            <svg viewBox="0 0 200 200">
+                                <circle class="bg" cx="100" cy="100" r="90"/>
+                                <circle class="progress" cx="100" cy="100" r="90" id="progress-circle"/>
+                            </svg>
+                            <div class="economy-value">
+                                <span class="label">Economia Mensal</span>
+                                <span class="value" id="economia-mensal">R$ 0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-details">
+                        <div class="detail-card">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div class="detail-info">
+                                <span class="detail-label">Economia Anual</span>
+                                <span class="detail-value" id="economia-anual">R$ 0</span>
+                            </div>
+                        </div>
+                        <div class="detail-card highlight">
+                            <i class="fas fa-piggy-bank"></i>
+                            <div class="detail-info">
+                                <span class="detail-label">Em 25 Anos</span>
+                                <span class="detail-value" id="economia-25anos">R$ 0</span>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <i class="fas fa-solar-panel"></i>
+                            <div class="detail-info">
+                                <span class="detail-label">Sistema Estimado</span>
+                                <span class="detail-value" id="sistema-kwp">0 kWp</span>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <i class="fas fa-clock"></i>
+                            <div class="detail-info">
+                                <span class="detail-label">Retorno do Investimento</span>
+                                <span class="detail-value" id="payback">0 anos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-cta">
+                        <p>Quer um orçamento personalizado e gratuito?</p>
+                        <a href="https://wa.me/5551984922780?text=Olá! Fiz a simulação no site e gostaria de um orçamento. Minha conta de luz é de aproximadamente R$ " class="btn btn-primary btn-lg" id="whatsapp-orcamento" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Solicitar Orçamento Gratuito
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 Anos Section -->
+    <section class="anniversary-section" id="5anos">
+        <div class="anniversary-bg">
+            <div class="floating-icons">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-bolt"></i>
+                <i class="fas fa-leaf"></i>
+                <i class="fas fa-solar-panel"></i>
+                <i class="fas fa-plug"></i>
+            </div>
+        </div>
+        <div class="container">
+            <div class="anniversary-content">
+                <div class="anniversary-badge">
+                    <div class="badge-inner">
+                        <span class="badge-number">5</span>
+                        <span class="badge-text">ANOS</span>
+                    </div>
+                    <div class="badge-ring"></div>
+                    <div class="badge-rays">
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+
+                <div class="anniversary-text">
+                    <h2 class="anniversary-title">
+                        5 Anos Iluminando o
+                        <span class="gradient-text">Rio Grande do Sul</span>
+                    </h2>
+                    <p class="anniversary-subtitle">
+                        E quem ganha é <strong>VOCÊ</strong>, nosso cliente!
+                    </p>
+
+                    <div class="anniversary-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Condições Especiais</h4>
+                                <p>Comemorando 5 anos com as melhores condições do mercado para você</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>5 Anos de Garantia de Serviço</h4>
+                                <p>Garantia estendida na instalação para clientes que fecharem este mês</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-percent"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Financiamento Facilitado</h4>
+                                <p>Em até 120x com parcelas que cabem no seu bolso</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anniversary-cta">
+                        <a href="https://wa.me/5551984922780?text=Olá! Vi a promoção de 5 anos e quero aproveitar as condições especiais!" class="btn btn-glow" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Quero Aproveitar!
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2020</span>
+                        <h4>O Início</h4>
+                        <p>Fundação da SH Energia Solar com o sonho de democratizar a energia limpa</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2021</span>
+                        <h4>Primeiros 50 Projetos</h4>
+                        <p>Alcançamos a marca de 50 sistemas instalados no RS</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022</span>
+                        <h4>Expansão Regional</h4>
+                        <p>Ampliamos nossa área de atuação para todo o estado</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023</span>
+                        <h4>100+ Instalações</h4>
+                        <p>Superamos 100 projetos e consolidamos nossa reputação</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025</span>
+                        <h4>500+ Projetos</h4>
+                        <p>5 anos de história, mais de 500 projetos e milhares em economia gerada!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="differentials-section section-green" id="diferenciais">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-star"></i> Por que a SH?</span>
+                <h2 class="section-title">Nossos <span class="gradient-text">Diferenciais</span></h2>
+                <p class="section-subtitle">O que nos torna referência em energia solar no Rio Grande do Sul</p>
+            </div>
+
+            <div class="differentials-grid">
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>5 Anos de Experiência</h3>
+                    <p>Meia década de expertise em energia solar, com centenas de projetos bem-sucedidos em todo o RS.</p>
+                </div>
+
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Cada projeto é único. Analisamos suas necessidades e criamos a solução ideal para você.</p>
+                </div>
+
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Instalação Rápida</h3>
+                    <p>Equipe própria e treinada. Seu sistema instalado em tempo recorde, sem dor de cabeça.</p>
+                </div>
+
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte Contínuo</h3>
+                    <p>Não te abandonamos após a instalação. Suporte técnico sempre que precisar.</p>
+                </div>
+
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Financiamento Facilitado</h3>
+                    <p>Parcele em até 120x. A economia na conta de luz paga as parcelas!</p>
+                </div>
+
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Equipamentos Premium</h3>
+                    <p>Trabalhamos apenas com as melhores marcas do mercado, com garantia de fábrica.</p>
+                </div>
+            </div>
+
+            <div class="trust-badges">
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="trust-text">5.0 no Google</span>
+                    <span class="trust-sub">75+ avaliações</span>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <span class="trust-text">500+</span>
+                    <span class="trust-sub">Projetos Instalados</span>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <span class="trust-text">Todo RS</span>
+                    <span class="trust-sub">Área de Atuação</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="projects-section" id="projetos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-solar-panel"></i> Cases de Sucesso</span>
+                <h2 class="section-title">Projetos <span class="gradient-text">Realizados</span></h2>
+                <p class="section-subtitle">Veja a economia real de nossos clientes</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://shenergiasolar.com.br/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-08-at-09.34.24-1.jpeg" alt="Projeto Solar - Condomínio Dom Quixote">
+                        <div class="project-tag">Comercial</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Taquara, RS</span>
+                        </div>
+                        <h3>Condomínio de Lazer Dom Quixote</h3>
+                        <div class="project-savings">
+                            <span class="savings-label">Economia Mensal</span>
+                            <span class="savings-value">R$ 2.955,48</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://shenergiasolar.com.br/wp-content/uploads/2023/11/Design-sem-nome-7.jpg" alt="Projeto Solar - Pizzaria Cavalini">
+                        <div class="project-tag">Comercial</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Igrejinha, RS</span>
+                        </div>
+                        <h3>Pizzaria Cavalini</h3>
+                        <div class="project-savings">
+                            <span class="savings-label">Economia Mensal</span>
+                            <span class="savings-value">R$ 3.029,40</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://shenergiasolar.com.br/wp-content/uploads/2023/11/Design-sem-nome-6.jpg" alt="Projeto Solar - Ponto da Bebida">
+                        <div class="project-tag">Comercial</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Igrejinha, RS</span>
+                        </div>
+                        <h3>Ponto da Bebida</h3>
+                        <div class="project-savings">
+                            <span class="savings-label">Economia Mensal</span>
+                            <span class="savings-value">R$ 1.767,15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <p>Quer ser nosso próximo case de sucesso?</p>
+                <a href="https://wa.me/5551984922780?text=Olá! Quero ser o próximo case de sucesso da SH Energia!" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Quero Economizar Também
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-question-circle"></i> Dúvidas</span>
+                <h2 class="section-title">Perguntas <span class="gradient-text">Frequentes</span></h2>
+                <p class="section-subtitle">Tire suas dúvidas sobre energia solar</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quanto custa um sistema de energia solar?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O valor varia conforme o consumo de energia. Um sistema residencial pode partir de R$ 15.000, enquanto comerciais e industriais variam conforme a demanda. O melhor é solicitar um orçamento personalizado gratuito!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Em quanto tempo tenho retorno do investimento?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O retorno do investimento (payback) geralmente ocorre entre 3 a 5 anos. Considerando que os painéis têm vida útil de 25+ anos, você terá décadas de energia praticamente gratuita!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Funciona em dias nublados ou chuvosos?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Os painéis captam a radiação solar mesmo em dias nublados, apenas com eficiência reduzida. O sistema é dimensionado considerando as variações climáticas da sua região.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Qual a garantia dos equipamentos?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Os painéis solares têm garantia de 25 anos de eficiência. Os inversores têm garantia de 5 a 12 anos dependendo da marca. Além disso, oferecemos garantia do serviço de instalação.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Preciso de bateria para armazenar energia?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Na maioria dos casos, não! O sistema é conectado à rede elétrica (on-grid). A energia excedente é injetada na rede e vira créditos para usar à noite ou em dias nublados.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como funciona o financiamento?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Trabalhamos com diversas opções de financiamento em até 120 meses. Na maioria dos casos, a parcela fica menor que a economia na conta de luz, ou seja, você já começa economizando!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-orange">
+        <div class="cta-bg">
+            <div class="cta-particles"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para <span class="gradient-text">Economizar</span>?</h2>
+                <p>Solicite agora seu orçamento gratuito e sem compromisso. Nossa equipe entrará em contato em até 24 horas!</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5551984922780?text=Olá! Gostaria de solicitar um orçamento gratuito para energia solar." class="btn btn-glow btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Orçamento pelo WhatsApp
+                    </a>
+                </div>
+                <div class="cta-trust">
+                    <span><i class="fas fa-check"></i> Orçamento Gratuito</span>
+                    <span><i class="fas fa-check"></i> Sem Compromisso</span>
+                    <span><i class="fas fa-check"></i> Resposta em 24h</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="https://shenergiasolar.com.br/wp-content/uploads/2023/11/SH-energia-solar-1024x1010.png" alt="SH Energia Solar" class="logo-img">
+                    </a>
+                    <p>Transformando o sol em economia para centenas de famílias e empresas no Rio Grande do Sul desde 2020.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/5551984922780" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shenergiasolar/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/shenergiasolar" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#calculadora">Calculadora Solar</a></li>
+                        <li><a href="#5anos">5 Anos SH</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/5551984922780">(51) 98492-2780</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <a href="https://shenergiasolar.com.br">shenergiasolar.com.br</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rio Grande do Sul, Brasil</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-cta">
+                    <h4>Solicite um Orçamento</h4>
+                    <p>Fale com nossos especialistas e descubra quanto você pode economizar.</p>
+                    <a href="https://wa.me/5551984922780?text=Olá! Gostaria de solicitar um orçamento." class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Falar Agora
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 SH Energia Solar. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="fas fa-heart"></i> para iluminar o RS</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5551984922780?text=Olá! Gostaria de mais informações sobre energia solar." class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="pulse"></span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

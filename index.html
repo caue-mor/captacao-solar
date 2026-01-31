@@ -3,37 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SH Energia Solar | Transforme Sol em Economia</title>
-    <meta name="description" content="SH Energia Solar - 5 anos transformando o sol em economia para centenas de clientes no Rio Grande do Sul. Solicite seu orçamento gratuito!">
+    <title>Captação Solar Agressiva | O Sistema para Conquistar Clientes de Alto Ticket</title>
+    <meta name="description" content="Pare de brigar por migalhas. Aprenda a capturar empresas, indústrias e fazendas que pagam 10x mais por projeto solar.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style-light.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <img src="https://shenergiasolar.com.br/wp-content/uploads/2023/11/SH-energia-solar-1024x1010.png" alt="SH Energia Solar" class="logo-img">
-            </a>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#inicio" class="nav-link">Início</a></li>
-                <li><a href="#calculadora" class="nav-link">Calculadora</a></li>
-                <li><a href="#5anos" class="nav-link">5 Anos</a></li>
-                <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
-                <li><a href="#projetos" class="nav-link">Projetos</a></li>
-                <li><a href="#faq" class="nav-link">FAQ</a></li>
-                <li><a href="#contato" class="nav-link nav-cta">Orçamento Grátis</a></li>
-            </ul>
-            <button class="nav-toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
@@ -42,660 +19,364 @@
             <div class="hero-gradient"></div>
         </div>
         <div class="hero-content">
-            <div class="hero-badge">
-                <i class="fas fa-bolt"></i>
-                <span>5 Anos Iluminando o RS</span>
-            </div>
-            <h1 class="hero-title">
-                Transforme <span class="gradient-text">Sol</span> em
-                <span class="typing-text">Economia</span>
-            </h1>
+            <div class="hero-tag">Metodologia de Captação</div>
+            <h1>Pare de brigar por migalhas.<br>Capture quem paga de verdade.</h1>
             <p class="hero-subtitle">
-                Reduza até <strong>80%</strong> da sua conta de luz com energia solar.
-                Mais de <strong>500 projetos</strong> instalados e centenas de clientes satisfeitos no Rio Grande do Sul.
+                O sistema que ensina integradores a sair da guerra de preços e conquistar <strong>empresas, indústrias e fazendas</strong> que fecham contratos de alto valor.
             </p>
             <div class="hero-cta">
-                <a href="#calculadora" class="btn btn-primary">
-                    <i class="fas fa-calculator"></i>
-                    Calcular Economia
-                </a>
-                <a href="https://wa.me/5551984922780?text=Olá! Gostaria de solicitar um orçamento para energia solar." class="btn btn-orange" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    Falar com Especialista
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number" data-count="500">0</span>
-                    <span class="stat-label">Projetos</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="5">0</span>
-                    <span class="stat-label">Anos</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="80">0</span>
-                    <span class="stat-label">% Economia</span>
-                </div>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="hero-image-container">
-                <img src="https://shenergiasolar.com.br/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-08-at-09.34.24-1.jpeg" alt="Sistema de Energia Solar - SH Energia Solar" class="hero-project-image">
-                <div class="hero-image-badge">
-                    <i class="fas fa-bolt"></i>
-                    <span>Projeto Real</span>
-                </div>
-                <div class="hero-image-glow"></div>
-            </div>
-        </div>
-        <a href="#calculadora" class="scroll-indicator">
-            <span>Calcule sua economia</span>
-            <i class="fas fa-chevron-down"></i>
-        </a>
-    </section>
-
-    <!-- Calculadora Solar -->
-    <section class="calculator-section" id="calculadora">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-calculator"></i> Calculadora Solar</span>
-                <h2 class="section-title">Descubra sua <span class="gradient-text">Economia</span></h2>
-                <p class="section-subtitle">Calcule em segundos quanto você pode economizar com energia solar</p>
-            </div>
-
-            <div class="calculator-wrapper">
-                <div class="calculator-card">
-                    <div class="calc-step active" data-step="1">
-                        <div class="step-header">
-                            <div class="step-number">1</div>
-                            <h3>Qual sua conta de luz mensal?</h3>
-                        </div>
-                        <div class="calc-input-group">
-                            <span class="input-prefix">R$</span>
-                            <input type="number" id="conta-luz" class="calc-input" placeholder="500" min="100" max="50000">
-                            <span class="input-suffix">/mês</span>
-                        </div>
-                        <div class="quick-values">
-                            <button class="quick-btn" data-value="300">R$ 300</button>
-                            <button class="quick-btn" data-value="500">R$ 500</button>
-                            <button class="quick-btn" data-value="800">R$ 800</button>
-                            <button class="quick-btn" data-value="1500">R$ 1.500</button>
-                            <button class="quick-btn" data-value="3000">R$ 3.000+</button>
-                        </div>
-                    </div>
-
-                    <div class="calc-step" data-step="2">
-                        <div class="step-header">
-                            <div class="step-number">2</div>
-                            <h3>Tipo de instalação</h3>
-                        </div>
-                        <div class="type-options">
-                            <label class="type-option">
-                                <input type="radio" name="tipo" value="residencial" checked>
-                                <div class="option-card">
-                                    <i class="fas fa-home"></i>
-                                    <span>Residencial</span>
-                                </div>
-                            </label>
-                            <label class="type-option">
-                                <input type="radio" name="tipo" value="comercial">
-                                <div class="option-card">
-                                    <i class="fas fa-building"></i>
-                                    <span>Comercial</span>
-                                </div>
-                            </label>
-                            <label class="type-option">
-                                <input type="radio" name="tipo" value="rural">
-                                <div class="option-card">
-                                    <i class="fas fa-tractor"></i>
-                                    <span>Rural</span>
-                                </div>
-                            </label>
-                            <label class="type-option">
-                                <input type="radio" name="tipo" value="industrial">
-                                <div class="option-card">
-                                    <i class="fas fa-industry"></i>
-                                    <span>Industrial</span>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-
-                    <button class="calc-btn" id="calcular-btn">
-                        <span>Calcular Economia</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
-                </div>
-
-                <div class="calculator-result" id="calc-result">
-                    <div class="result-header">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Sua Projeção de Economia</h3>
-                    </div>
-
-                    <div class="result-main">
-                        <div class="economy-circle">
-                            <svg viewBox="0 0 200 200">
-                                <circle class="bg" cx="100" cy="100" r="90"/>
-                                <circle class="progress" cx="100" cy="100" r="90" id="progress-circle"/>
-                            </svg>
-                            <div class="economy-value">
-                                <span class="label">Economia Mensal</span>
-                                <span class="value" id="economia-mensal">R$ 0</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="result-details">
-                        <div class="detail-card">
-                            <i class="fas fa-calendar-alt"></i>
-                            <div class="detail-info">
-                                <span class="detail-label">Economia Anual</span>
-                                <span class="detail-value" id="economia-anual">R$ 0</span>
-                            </div>
-                        </div>
-                        <div class="detail-card highlight">
-                            <i class="fas fa-piggy-bank"></i>
-                            <div class="detail-info">
-                                <span class="detail-label">Em 25 Anos</span>
-                                <span class="detail-value" id="economia-25anos">R$ 0</span>
-                            </div>
-                        </div>
-                        <div class="detail-card">
-                            <i class="fas fa-solar-panel"></i>
-                            <div class="detail-info">
-                                <span class="detail-label">Sistema Estimado</span>
-                                <span class="detail-value" id="sistema-kwp">0 kWp</span>
-                            </div>
-                        </div>
-                        <div class="detail-card">
-                            <i class="fas fa-clock"></i>
-                            <div class="detail-info">
-                                <span class="detail-label">Retorno do Investimento</span>
-                                <span class="detail-value" id="payback">0 anos</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="result-cta">
-                        <p>Quer um orçamento personalizado e gratuito?</p>
-                        <a href="https://wa.me/5551984922780?text=Olá! Fiz a simulação no site e gostaria de um orçamento. Minha conta de luz é de aproximadamente R$ " class="btn btn-primary btn-lg" id="whatsapp-orcamento" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                            Solicitar Orçamento Gratuito
-                        </a>
-                    </div>
-                </div>
+                <a href="https://payfast.greenn.com.br/ec5z5gy" class="btn btn-primary">Quero Dominar Minha Região</a>
             </div>
         </div>
     </section>
 
-    <!-- 5 Anos Section -->
-    <section class="anniversary-section" id="5anos">
-        <div class="anniversary-bg">
-            <div class="floating-icons">
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-bolt"></i>
-                <i class="fas fa-leaf"></i>
-                <i class="fas fa-solar-panel"></i>
-                <i class="fas fa-plug"></i>
+    <!-- Reframe Section - O problema não é concorrência -->
+    <section class="reframe-section">
+        <div class="container">
+            <div class="reframe-header reveal">
+                <h2>O problema não é concorrência.<br>É onde você está competindo.</h2>
+            </div>
+            <div class="reframe-content reveal">
+                <p class="reframe-intro">Todo integrador reclama:</p>
+                <p class="reframe-quote">"O mercado está ruim porque tem concorrência desleal."</p>
+                <p class="reframe-truth">Isso é confortável. Mas é falso.</p>
+            </div>
+            <div class="reframe-brutal reveal">
+                <h3>A verdade brutal:</h3>
+                <p>Se você anuncia para o mesmo público que todos,<br>
+                fala a mesma coisa que todos,<br>
+                e vende o mesmo produto que todos...</p>
+                <p class="reframe-punchline"><strong>Você não tem concorrentes. Você é só mais um.</strong></p>
+            </div>
+            <div class="reframe-result reveal">
+                <p>É por isso que os preços despencam, os clientes somem e a margem morre.</p>
             </div>
         </div>
+    </section>
+
+    <!-- Problem Section - Mercado Quebrado -->
+    <section class="problem-section">
         <div class="container">
-            <div class="anniversary-content">
-                <div class="anniversary-badge">
-                    <div class="badge-inner">
-                        <span class="badge-number">5</span>
-                        <span class="badge-text">ANOS</span>
-                    </div>
-                    <div class="badge-ring"></div>
-                    <div class="badge-rays">
-                        <span></span><span></span><span></span><span></span>
-                        <span></span><span></span><span></span><span></span>
-                    </div>
+            <div class="problem-header reveal">
+                <h2>90% dos integradores disputam o bolso errado</h2>
+            </div>
+            <div class="problem-comparison">
+                <div class="problem-card problem-wrong reveal">
+                    <h3>O que todo mundo faz:</h3>
+                    <ul class="problem-list">
+                        <li><span class="x-icon">X</span> Residências pequenas</li>
+                        <li><span class="x-icon">X</span> Contas de R$300, R$500</li>
+                        <li><span class="x-icon">X</span> Clientes que pedem 5 orçamentos</li>
+                        <li><span class="x-icon">X</span> Projetos de margem esmagada</li>
+                    </ul>
                 </div>
-
-                <div class="anniversary-text">
-                    <h2 class="anniversary-title">
-                        5 Anos Iluminando o
-                        <span class="gradient-text">Rio Grande do Sul</span>
-                    </h2>
-                    <p class="anniversary-subtitle">
-                        E quem ganha é <strong>VOCÊ</strong>, nosso cliente!
-                    </p>
-
-                    <div class="anniversary-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-gift"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Condições Especiais</h4>
-                                <p>Comemorando 5 anos com as melhores condições do mercado para você</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>5 Anos de Garantia nos Equipamentos</h4>
-                                <p>Garantia estendida nos equipamentos para clientes que fecharem este mês</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-percent"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Financiamento Facilitado</h4>
-                                <p>Em até 120x com parcelas que cabem no seu bolso</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="anniversary-cta">
-                        <a href="https://wa.me/5551984922780?text=Olá! Vi a promoção de 5 anos e quero aproveitar as condições especiais!" class="btn btn-glow" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                            Quero Aproveitar!
-                        </a>
-                    </div>
+                <div class="problem-card problem-right reveal">
+                    <h3>O que poucos dominam:</h3>
+                    <ul class="problem-list highlight">
+                        <li><span class="check-icon">+</span> Empresas e comércios</li>
+                        <li><span class="check-icon">+</span> Fazendas e agronegócios</li>
+                        <li><span class="check-icon">+</span> Indústrias</li>
+                        <li><span class="check-icon">+</span> Contas de R$5.000 a R$50.000</li>
+                    </ul>
+                    <p class="problem-highlight">Faturam em um único contrato o que outros fazem no mês inteiro.</p>
                 </div>
             </div>
+            <div class="problem-conclusion reveal">
+                <p>A diferença não é sorte. <strong>É método de captação.</strong></p>
+            </div>
+        </div>
+    </section>
 
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2021</span>
-                        <h4>O Início</h4>
-                        <p>Fundação da SH Energia Solar em Igrejinha com o sonho de democratizar a energia limpa</p>
-                    </div>
+    <!-- High Ticket Products Section -->
+    <section class="highticket-section">
+        <div class="container">
+            <div class="highticket-header reveal">
+                <h2>Clientes de alto padrão compram diferente</h2>
+                <p>Enquanto você briga por kit residencial, eles estão fechando:</p>
+            </div>
+            <div class="highticket-grid">
+                <div class="highticket-card reveal">
+                    <h3>Usinas de Investimento</h3>
+                    <p>Projetos de geração compartilhada com retorno financeiro garantido</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2022</span>
-                        <h4>Primeiros 50 Projetos</h4>
-                        <p>Alcançamos a marca de 50 sistemas instalados no RS</p>
-                    </div>
+                <div class="highticket-card reveal">
+                    <h3>Mercado Livre de Energia</h3>
+                    <p>Clientes que migram para economizar milhões por ano</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2023</span>
-                        <h4>Expansão Regional</h4>
-                        <p>Ampliamos nossa área de atuação e superamos 100 projetos</p>
-                    </div>
+                <div class="highticket-card reveal">
+                    <h3>Sistemas On-Grid</h3>
+                    <p>Projetos conectados de alta potência para grandes consumidores</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2024</span>
-                        <h4>Consolidação</h4>
-                        <p>Referência em energia solar na região do Vale do Paranhana</p>
-                    </div>
+                <div class="highticket-card reveal">
+                    <h3>Sistemas Híbridos</h3>
+                    <p>Soluções completas com armazenamento para quem exige autonomia</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2026</span>
-                        <h4>500+ Projetos</h4>
-                        <p>5 anos de história, mais de 500 projetos e milhares em economia gerada!</p>
-                    </div>
+            </div>
+            <div class="highticket-conclusion reveal">
+                <p>Esses clientes existem na sua região.<br><strong>A metodologia ensina como encontrá-los.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opportunity Section - O Verdadeiro Jogo -->
+    <section class="opportunity-section">
+        <div class="container">
+            <div class="opportunity-box reveal">
+                <h2>O verdadeiro jogo do mercado solar</h2>
+                <p class="opportunity-main">
+                    Quem aprende a atrair <strong>grandes consumidores de energia</strong> nunca mais briga por migalhas.
+                </p>
+                <div class="opportunity-gap">
+                    <p>Mas ninguém ensina:</p>
+                    <ul>
+                        <li>Onde esses clientes estão</li>
+                        <li>Como alcançá-los</li>
+                        <li>Como abordá-los</li>
+                        <li>Como fechar</li>
+                    </ul>
+                </div>
+                <p class="opportunity-solution">É isso que a <strong>Captação Solar Agressiva</strong> resolve.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Learn Section -->
+    <section class="learn">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>O que você aprende aqui</h2>
+                <p class="learn-subtitle">Este não é um curso de anúncios.<br><strong>É um manual de conquista de clientes de alto ticket solar.</strong></p>
+            </div>
+            <div class="learn-grid">
+                <div class="learn-card reveal">
+                    <div class="learn-check">+</div>
+                    <p>Mapear <strong>empresas, indústrias, fazendas e residências premium</strong></p>
+                </div>
+                <div class="learn-card reveal">
+                    <div class="learn-check">+</div>
+                    <p>Criar campanhas que atraem <strong>quem gasta muito com energia</strong></p>
+                </div>
+                <div class="learn-card reveal">
+                    <div class="learn-check">+</div>
+                    <p>Usar copy que <strong>filtra curioso e chama decisor</strong></p>
+                </div>
+                <div class="learn-card reveal">
+                    <div class="learn-check">+</div>
+                    <p>Montar funis que trazem <strong>projetos de alto valor</strong></p>
+                </div>
+                <div class="learn-card reveal">
+                    <div class="learn-check">+</div>
+                    <p>Transformar lead em venda usando <strong>IA e processo comercial</strong></p>
+                </div>
+            </div>
+            <div class="learn-conclusion reveal">
+                <p>Você deixa de competir por <span class="strikethrough">volume</span> e passa a competir por <strong>valor</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Section - IA de Atendimento -->
+    <section class="bonus-section">
+        <div class="container">
+            <div class="bonus-box reveal">
+                <div class="bonus-badge">
+                    <span>BÔNUS POR TEMPO LIMITADO</span>
+                </div>
+                <h2>30 dias de IA de Atendimento</h2>
+                <p class="bonus-intro">Ao entrar hoje você recebe:</p>
+                <div class="bonus-gift">
+                    <p><strong>30 dias de uso gratuito da IA de Atendimento Vortexx</strong></p>
+                </div>
+                <div class="bonus-features">
+                    <p>Sua própria IA irá:</p>
+                    <ul>
+                        <li>Atender leads no WhatsApp</li>
+                        <li>Fazer perguntas</li>
+                        <li>Qualificar</li>
+                        <li>Filtrar curiosos</li>
+                        <li>Agendar reuniões</li>
+                    </ul>
+                </div>
+                <p class="bonus-while">Enquanto você foca em <strong>fechar projetos grandes</strong>.</p>
+                <div class="bonus-clarification">
+                    <p>Isso não é suporte.<br><strong>É um pré-vendedor digital trabalhando 24h por você.</strong></p>
+                </div>
+                <div class="bonus-urgency">
+                    <p>Este bônus pode ser removido a qualquer momento.<br><strong>Garanta enquanto ainda está disponível.</strong></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Diferenciais -->
-    <section class="differentials-section section-green" id="diferenciais">
+    <!-- Social Proof Section -->
+    <section class="social-proof">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-star"></i> Por que a SH?</span>
-                <h2 class="section-title">Nossos <span class="gradient-text">Diferenciais</span></h2>
-                <p class="section-subtitle">O que nos torna referência em energia solar no Rio Grande do Sul</p>
+            <div class="proof-box reveal">
+                <h2>Por que isso funciona</h2>
+                <p>A Captação Solar Agressiva já foi aplicada por <strong>centenas de integradores</strong> em todo o Brasil.</p>
+                <p class="proof-reason">Não porque eles aprenderam "mais tráfego".<br><strong>Mas porque aprenderam onde estão os clientes que realmente pagam.</strong></p>
             </div>
+        </div>
+    </section>
 
-            <div class="differentials-grid">
-                <div class="diff-card">
-                    <div class="diff-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3>5 Anos de Experiência</h3>
-                    <p>Meia década de expertise em energia solar, com centenas de projetos bem-sucedidos em todo o RS.</p>
-                </div>
-
-                <div class="diff-card">
-                    <div class="diff-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Atendimento Personalizado</h3>
-                    <p>Cada projeto é único. Analisamos suas necessidades e criamos a solução ideal para você.</p>
-                </div>
-
-                <div class="diff-card">
-                    <div class="diff-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Instalação Rápida</h3>
-                    <p>Equipe própria e treinada. Seu sistema instalado em tempo recorde, sem dor de cabeça.</p>
-                </div>
-
-                <div class="diff-card">
-                    <div class="diff-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>Suporte Contínuo</h3>
-                    <p>Não te abandonamos após a instalação. Suporte técnico sempre que precisar.</p>
-                </div>
-
-                <div class="diff-card">
-                    <div class="diff-icon">
-                        <i class="fas fa-file-invoice-dollar"></i>
-                    </div>
-                    <h3>Financiamento Facilitado</h3>
-                    <p>Parcele em até 120x. A economia na conta de luz paga as parcelas!</p>
-                </div>
-
-                <div class="diff-card">
-                    <div class="diff-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Equipamentos Premium</h3>
-                    <p>Trabalhamos apenas com as melhores marcas do mercado, com garantia de fábrica.</p>
-                </div>
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Resultados de quem aplica o sistema</h2>
+                <p>Veja o que nossos clientes estão conquistando</p>
             </div>
-
-            <div class="trust-badges">
-                <div class="trust-item">
-                    <div class="trust-icon">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <span class="trust-text">5.0 no Google</span>
-                    <span class="trust-sub">130+ avaliações nota 5</span>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <img src="https://vortexxassessoria.com.br/wp-content/uploads/2024/03/IMG_8372.jpg" alt="Resultado cliente" class="testimonial-image">
                 </div>
-                <div class="trust-item">
-                    <div class="trust-icon">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <span class="trust-text">500+</span>
-                    <span class="trust-sub">Projetos Instalados</span>
+                <div class="testimonial-card reveal">
+                    <img src="https://vortexxassessoria.com.br/wp-content/uploads/2024/03/IMG_8370.jpg" alt="Resultado cliente" class="testimonial-image">
                 </div>
-                <div class="trust-item">
-                    <div class="trust-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <span class="trust-text">Todo RS</span>
-                    <span class="trust-sub">Área de Atuação</span>
+                <div class="testimonial-card reveal">
+                    <img src="https://vortexxassessoria.com.br/wp-content/uploads/2024/03/IMG_8369.jpg" alt="Resultado cliente" class="testimonial-image">
+                </div>
+                <div class="testimonial-card reveal">
+                    <img src="https://vortexxassessoria.com.br/wp-content/uploads/2024/03/IMG_8368.jpg" alt="Resultado cliente" class="testimonial-image">
+                </div>
+                <div class="testimonial-card reveal">
+                    <img src="https://vortexxassessoria.com.br/wp-content/uploads/2024/03/IMG_8367-1.jpg" alt="Resultado cliente" class="testimonial-image">
+                </div>
+                <div class="testimonial-card reveal">
+                    <img src="https://vortexxassessoria.com.br/wp-content/uploads/2024/03/Captura-de-Tela-2024-03-20-as-11.16.31.png" alt="Resultado cliente" class="testimonial-image">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projetos -->
-    <section class="projects-section" id="projetos">
+    <!-- For Who Section -->
+    <section class="for-who">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-solar-panel"></i> Cases de Sucesso</span>
-                <h2 class="section-title">Projetos <span class="gradient-text">Realizados</span></h2>
-                <p class="section-subtitle">Veja a economia real de nossos clientes</p>
+            <div class="section-header reveal">
+                <h2>Para quem é</h2>
+                <p>Este sistema é para:</p>
             </div>
-
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://shenergiasolar.com.br/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-08-at-09.34.24-1.jpeg" alt="Projeto Solar - Condomínio Dom Quixote">
-                        <div class="project-tag">Comercial</div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Taquara, RS</span>
-                        </div>
-                        <h3>Condomínio de Lazer Dom Quixote</h3>
-                        <div class="project-savings">
-                            <span class="savings-label">Economia Mensal</span>
-                            <span class="savings-value">R$ 2.955,48</span>
-                        </div>
-                    </div>
+            <div class="for-who-grid">
+                <div class="for-who-card for-who-yes reveal">
+                    <div class="for-who-check">+</div>
+                    <p>Integradores que querem <strong>sair do amadorismo</strong></p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://shenergiasolar.com.br/wp-content/uploads/2023/11/Design-sem-nome-7.jpg" alt="Projeto Solar - Pizzaria Cavalini">
-                        <div class="project-tag">Comercial</div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Igrejinha, RS</span>
-                        </div>
-                        <h3>Pizzaria Cavalini</h3>
-                        <div class="project-savings">
-                            <span class="savings-label">Economia Mensal</span>
-                            <span class="savings-value">R$ 3.029,40</span>
-                        </div>
-                    </div>
+                <div class="for-who-card for-who-yes reveal">
+                    <div class="for-who-check">+</div>
+                    <p>Vendedores que querem <strong>alavancar suas vendas</strong></p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://shenergiasolar.com.br/wp-content/uploads/2023/11/Design-sem-nome-6.jpg" alt="Projeto Solar - Ponto da Bebida">
-                        <div class="project-tag">Comercial</div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Igrejinha, RS</span>
-                        </div>
-                        <h3>Ponto da Bebida</h3>
-                        <div class="project-savings">
-                            <span class="savings-label">Economia Mensal</span>
-                            <span class="savings-value">R$ 1.767,15</span>
-                        </div>
-                    </div>
+                <div class="for-who-card for-who-yes reveal">
+                    <div class="for-who-check">+</div>
+                    <p>Quem quer <strong>parar de viver de indicação</strong></p>
+                </div>
+                <div class="for-who-card for-who-yes reveal">
+                    <div class="for-who-check">+</div>
+                    <p>Empresas que querem <strong>faturar alto com poucos contratos</strong></p>
                 </div>
             </div>
-
-            <div class="projects-cta">
-                <p>Quer ser nosso próximo case de sucesso?</p>
-                <a href="https://wa.me/5551984922780?text=Olá! Quero ser o próximo case de sucesso da SH Energia!" class="btn btn-primary" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    Quero Economizar Também
-                </a>
+            <div class="for-who-warning reveal">
+                <p><strong>Não é para quem quer testar.</strong><br>É para quem quer dominar.</p>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section" id="faq">
+    <!-- Urgency Section - Custo de Continuar -->
+    <section class="urgency-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-question-circle"></i> Dúvidas</span>
-                <h2 class="section-title">Perguntas <span class="gradient-text">Frequentes</span></h2>
-                <p class="section-subtitle">Tire suas dúvidas sobre energia solar</p>
-            </div>
-
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Quanto custa um sistema de energia solar?</span>
-                        <i class="fas fa-plus"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>O valor varia conforme o consumo de energia. Um sistema residencial pode partir de R$ 15.000, enquanto comerciais e industriais variam conforme a demanda. O melhor é solicitar um orçamento personalizado gratuito!</p>
+            <div class="urgency-box reveal">
+                <h2>O custo de continuar como está</h2>
+                <div class="urgency-comparison">
+                    <div class="urgency-you">
+                        <p>Enquanto você:</p>
+                        <ul>
+                            <li>Fecha projetos pequenos</li>
+                            <li>Negocia centavos</li>
+                            <li>Sofre com instabilidade</li>
+                        </ul>
+                    </div>
+                    <div class="urgency-others">
+                        <p>Outros estão:</p>
+                        <ul>
+                            <li><strong>Fechando fazendas</strong></li>
+                            <li><strong>Fechando indústrias</strong></li>
+                            <li><strong>Dominando regiões</strong></li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Em quanto tempo tenho retorno do investimento?</span>
-                        <i class="fas fa-plus"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>O retorno do investimento (payback) geralmente ocorre entre 3 a 5 anos. Considerando que os painéis têm vida útil de 25+ anos, você terá décadas de energia praticamente gratuita!</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Funciona em dias nublados ou chuvosos?</span>
-                        <i class="fas fa-plus"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Sim! Os painéis captam a radiação solar mesmo em dias nublados, apenas com eficiência reduzida. O sistema é dimensionado considerando as variações climáticas da sua região.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Qual a garantia dos equipamentos?</span>
-                        <i class="fas fa-plus"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Os painéis solares têm garantia de 25 anos de eficiência. Os inversores têm garantia de 5 a 12 anos dependendo da marca. Além disso, oferecemos garantia do serviço de instalação.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Preciso de bateria para armazenar energia?</span>
-                        <i class="fas fa-plus"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Na maioria dos casos, não! O sistema é conectado à rede elétrica (on-grid). A energia excedente é injetada na rede e vira créditos para usar à noite ou em dias nublados.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Como funciona o financiamento?</span>
-                        <i class="fas fa-plus"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Trabalhamos com diversas opções de financiamento em até 120 meses. Na maioria dos casos, a parcela fica menor que a economia na conta de luz, ou seja, você já começa economizando!</p>
-                    </div>
+                <div class="urgency-question">
+                    <p>A pergunta é simples:</p>
+                    <p class="urgency-choice">Você quer continuar disputando migalhas<br>ou aprender a capturar os <strong>maiores contratos do seu mercado</strong>?</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section section-orange">
-        <div class="cta-bg">
-            <div class="cta-particles"></div>
-        </div>
+    <!-- CTA - Pricing Section -->
+    <section class="cta-section" id="investimento">
         <div class="container">
-            <div class="cta-content">
-                <h2>Pronto para <span class="gradient-text">Economizar</span>?</h2>
-                <p>Solicite agora seu orçamento gratuito e sem compromisso. Nossa equipe entrará em contato em até 24 horas!</p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/5551984922780?text=Olá! Gostaria de solicitar um orçamento gratuito para energia solar." class="btn btn-glow btn-lg" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                        Orçamento pelo WhatsApp
-                    </a>
-                </div>
-                <div class="cta-trust">
-                    <span><i class="fas fa-check"></i> Orçamento Gratuito</span>
-                    <span><i class="fas fa-check"></i> Sem Compromisso</span>
-                    <span><i class="fas fa-check"></i> Resposta em 24h</span>
-                </div>
+            <div class="cta-header reveal">
+                <h2>Acesse agora</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- Google Reviews Section -->
-    <section class="google-reviews-section" id="avaliacoes">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fab fa-google"></i> Avaliações</span>
-                <h2 class="section-title">O que nossos clientes <span class="gradient-text">dizem</span></h2>
-                <p class="section-subtitle">Veja as avaliações reais dos nossos clientes no Google</p>
-            </div>
-
-            <div class="google-reviews-card">
-                <div class="google-header">
-                    <div class="google-logo">
-                        <i class="fab fa-google"></i>
-                    </div>
-                    <div class="google-info">
-                        <h3>SH Energia Solar</h3>
-                        <div class="google-rating">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+            <div class="cta-wrapper">
+                <div class="cta-deliverables reveal-left">
+                    <h2>Captação Solar Agressiva</h2>
+                    <p class="cta-tagline">O sistema que ensina você a conquistar os maiores consumidores de energia da sua região.</p>
+                    <ul class="deliverable-list">
+                        <li>
+                            <div class="deliverable-check">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
                             </div>
-                            <span class="rating-number">5.0</span>
-                            <span class="rating-count">130+ avaliações</span>
-                        </div>
+                            Mapeamento de clientes de alto ticket
+                        </li>
+                        <li>
+                            <div class="deliverable-check">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                            </div>
+                            Campanhas para atrair grandes consumidores
+                        </li>
+                        <li>
+                            <div class="deliverable-check">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                            </div>
+                            Copy que filtra curiosos e atrai decisores
+                        </li>
+                        <li>
+                            <div class="deliverable-check">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                            </div>
+                            Funis de alta conversão para projetos premium
+                        </li>
+                        <li>
+                            <div class="deliverable-check">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                            </div>
+                            Processo comercial com IA integrada
+                        </li>
+                        <li>
+                            <div class="deliverable-check">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                            </div>
+                            Acesso vitalício + atualizações
+                        </li>
+                    </ul>
+                    <div class="cta-bonus-highlight">
+                        <p><strong>+ 30 dias de IA de Atendimento Vortexx inclusos</strong></p>
+                        <span class="bonus-limited">Bônus por tempo limitado</span>
                     </div>
                 </div>
-
-                <div class="reviews-grid">
-                    <div class="review-item">
-                        <div class="review-header">
-                            <div class="review-avatar">D</div>
-                            <div class="review-meta">
-                                <span class="review-name">Diego Moura</span>
-                                <div class="review-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
+                <div class="cta-pricing reveal-right">
+                    <div class="price-card">
+                        <div class="price-installment">
+                            <span class="times">12x</span>
+                            <span class="currency">R$</span>
+                            <span class="value">92</span>
+                            <span class="cents">,23</span>
                         </div>
-                        <p class="review-text">"Tudo foi realizado com profissionalismo, clareza e responsabilidade. A equipe demonstrou profundo conhecimento técnico e apresentou soluções personalizadas."</p>
+                        <div class="price-cash">ou <strong>R$ 897,00</strong> à vista</div>
                     </div>
-
-                    <div class="review-item">
-                        <div class="review-header">
-                            <div class="review-avatar">G</div>
-                            <div class="review-meta">
-                                <span class="review-name">Gian Carvalho</span>
-                                <div class="review-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="review-text">"Atendimento diferenciado, zero reclamações, parabéns pela equipe!"</p>
-                    </div>
-
-                    <div class="review-item">
-                        <div class="review-header">
-                            <div class="review-avatar">A</div>
-                            <div class="review-meta">
-                                <span class="review-name">Angelina Bresolin</span>
-                                <div class="review-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="review-text">"Desde o 1º contato sentimos que é uma empresa séria comprometida com o cliente. Agradeço a toda a equipe por seu profissionalismo e dedicação."</p>
-                    </div>
-                </div>
-
-                <div class="google-cta">
-                    <a href="https://maps.app.goo.gl/mjM1LNK16HLreFhe6" target="_blank" class="btn btn-google">
-                        <i class="fab fa-google"></i>
-                        Ver todas as avaliações no Google
+                    <a href="https://payfast.greenn.com.br/ec5z5gy" class="cta-button-main">
+                        Quero dominar minha região
+                        <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
                     </a>
                 </div>
             </div>
@@ -703,80 +384,16 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer" id="contato">
+    <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="footer-logo">
-                        <img src="https://shenergiasolar.com.br/wp-content/uploads/2023/11/SH-energia-solar-1024x1010.png" alt="SH Energia Solar" class="logo-img">
-                    </a>
-                    <p>Transformando o sol em economia para centenas de famílias e empresas no Rio Grande do Sul desde 2021.</p>
-                    <div class="footer-social">
-                        <a href="https://wa.me/5551984922780" target="_blank" aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <a href="https://www.instagram.com/sh.energiasolar/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/shenergiasolar" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="footer-links">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#calculadora">Calculadora Solar</a></li>
-                        <li><a href="#5anos">5 Anos SH</a></li>
-                        <li><a href="#diferenciais">Diferenciais</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-contact">
-                    <h4>Contato</h4>
-                    <ul>
-                        <li>
-                            <i class="fab fa-whatsapp"></i>
-                            <a href="https://wa.me/5551984922780">(51) 98492-2780</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-globe"></i>
-                            <a href="https://shenergiasolar.com.br">shenergiasolar.com.br</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>R. Pedro Kehl, 746 - Viaduto, Igrejinha - RS, 95650-000</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-cta">
-                    <h4>Solicite um Orçamento</h4>
-                    <p>Fale com nossos especialistas e descubra quanto você pode economizar.</p>
-                    <a href="https://wa.me/5551984922780?text=Olá! Gostaria de solicitar um orçamento." class="btn btn-primary" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                        Falar Agora
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 SH Energia Solar. Todos os direitos reservados.</p>
-                <p>Desenvolvido com <i class="fas fa-heart"></i> para iluminar o RS</p>
-            </div>
+            <p>Vortexx Marketing Digital</p>
         </div>
     </footer>
 
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/5551984922780?text=Olá! Gostaria de mais informações sobre energia solar." class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-        <span class="pulse"></span>
-    </a>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+    <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
 </html>

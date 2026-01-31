@@ -903,6 +903,36 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-light);
 }
 
+.bonus-price {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 24px 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+}
+
+.bonus-price-old {
+    font-size: 1.1rem;
+    color: #888;
+}
+
+.bonus-price-old span {
+    text-decoration: line-through;
+    color: #dc3545;
+}
+
+.bonus-price-new {
+    font-size: 1.1rem;
+    color: #888;
+}
+
+.bonus-price-new strong {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
 .bonus-urgency {
     margin-top: 32px;
     padding: 20px;

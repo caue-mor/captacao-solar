@@ -903,52 +903,54 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-light);
 }
 
-.bonus-price-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    margin: 32px 0;
-    padding: 28px 40px;
-    background: linear-gradient(135deg, rgba(255, 214, 0, 0.1) 0%, rgba(255, 214, 0, 0.05) 100%);
-    border: 2px solid var(--primary);
-    border-radius: 16px;
-}
-
-.bonus-price-box .bonus-price-old,
-.bonus-price-box .bonus-price-new {
+.bonus-price-card {
+    background: var(--primary);
+    border-radius: 20px;
+    padding: 32px 48px;
     text-align: center;
+    margin: 32px auto;
+    max-width: 280px;
 }
 
-.bonus-price-box .label {
-    display: block;
-    font-size: 0.9rem;
-    color: #888;
+.bonus-price-card .bonus-price-old {
+    font-size: 1rem;
+    color: var(--dark);
+    opacity: 0.7;
     margin-bottom: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
 }
 
-.bonus-price-box .value-old {
-    display: block;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #dc3545;
+.bonus-price-card .bonus-price-old span {
     text-decoration: line-through;
 }
 
-.bonus-price-arrow {
-    font-size: 2rem;
-    color: var(--primary);
-    font-weight: 700;
+.bonus-price-card .bonus-price-value {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+    line-height: 1;
 }
 
-.bonus-price-box .value-new {
-    display: block;
-    font-size: 2.5rem;
+.bonus-price-card .bonus-currency {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.bonus-price-card .bonus-value {
+    font-size: 5rem;
     font-weight: 900;
-    color: var(--primary);
-    text-shadow: 0 0 20px rgba(255, 214, 0, 0.3);
+    color: var(--dark);
+}
+
+.bonus-price-card .bonus-price-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--dark);
+    opacity: 0.8;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .bonus-urgency {

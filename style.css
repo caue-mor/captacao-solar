@@ -903,34 +903,52 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-light);
 }
 
-.bonus-price {
+.bonus-price-box {
     display: flex;
     justify-content: center;
-    gap: 32px;
-    margin: 24px 0;
-    padding: 20px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 12px;
+    align-items: center;
+    gap: 24px;
+    margin: 32px 0;
+    padding: 28px 40px;
+    background: linear-gradient(135deg, rgba(255, 214, 0, 0.1) 0%, rgba(255, 214, 0, 0.05) 100%);
+    border: 2px solid var(--primary);
+    border-radius: 16px;
 }
 
-.bonus-price-old {
-    font-size: 1.1rem;
+.bonus-price-box .bonus-price-old,
+.bonus-price-box .bonus-price-new {
+    text-align: center;
+}
+
+.bonus-price-box .label {
+    display: block;
+    font-size: 0.9rem;
     color: #888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
-.bonus-price-old span {
-    text-decoration: line-through;
+.bonus-price-box .value-old {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
     color: #dc3545;
+    text-decoration: line-through;
 }
 
-.bonus-price-new {
-    font-size: 1.1rem;
-    color: #888;
-}
-
-.bonus-price-new strong {
-    font-size: 1.4rem;
+.bonus-price-arrow {
+    font-size: 2rem;
     color: var(--primary);
+    font-weight: 700;
+}
+
+.bonus-price-box .value-new {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--primary);
+    text-shadow: 0 0 20px rgba(255, 214, 0, 0.3);
 }
 
 .bonus-urgency {

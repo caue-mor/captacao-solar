@@ -326,6 +326,64 @@
             fill: currentColor;
         }
 
+        /* About Section */
+        .about {
+            padding: 80px 0;
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about-header h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .about-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px;
+        }
+
+        .about-intro {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        .about-intro strong {
+            color: var(--accent);
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 32px;
+            text-align: center;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
         /* Footer */
         .footer {
             padding: 40px 0;
@@ -482,6 +540,32 @@
                         <li>Desconto imediato na conta</li>
                         <li>Sem obras, sem burocracia</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section class="about" id="quem-somos">
+        <div class="container">
+            <div class="about-header">
+                <h2>Quem somos</h2>
+            </div>
+            <div class="about-content">
+                <p class="about-intro"><strong>Vortexx</strong> — Pioneira no desenvolvimento de tecnologias voltadas para conversão em vendas no mercado solar.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">+5</span>
+                        <span class="stat-label">anos de experiência atendendo integradores</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">+219</span>
+                        <span class="stat-label">empresas atendidas em quase todos os estados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">+35M</span>
+                        <span class="stat-label">gerados em vendas de Micro e Mini Usinas</span>
+                    </div>
                 </div>
             </div>
         </div>

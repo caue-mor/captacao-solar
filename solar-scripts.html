@@ -277,7 +277,27 @@
 
         .cta-subtitle {
             color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .cta-checklist {
+            list-style: none;
+            text-align: left;
+            display: inline-block;
             margin-bottom: 32px;
+        }
+
+        .cta-checklist li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 0;
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .cta-checklist li svg {
+            flex-shrink: 0;
         }
 
         .price {
@@ -591,6 +611,12 @@
             <div class="cta-box">
                 <h2>Solar Scripts</h2>
                 <p class="cta-subtitle">Captação Grandes Consumidores</p>
+                <ul class="cta-checklist">
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>Script Residencial de Alto Consumo</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>Script Empresarial</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>Script Usinas de Investimento</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>Script Assinatura de Energia</li>
+                </ul>
                 <div class="price">
                     <div class="price-old">de <s>R$ 125</s></div>
                     <div class="price-value"><span>R$</span> 67</div>

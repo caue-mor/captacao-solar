@@ -32,6 +32,23 @@
             max-width: 720px;
             margin: 0 auto;
         }
+        .hero-text .hero-pain {
+            font-size: 1.1rem;
+            color: #999;
+            line-height: 1.7;
+            margin-bottom: 28px;
+            font-weight: 400;
+        }
+        .hero-text .hero-proof {
+            font-size: 0.95rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 28px;
+            letter-spacing: 0.01em;
+        }
+        .hero-text .hero-proof strong {
+            color: #fff;
+        }
         .hero-text .hero-tag {
             display: inline-block;
             background: var(--primary);
@@ -445,6 +462,7 @@
             .hero-curso { padding: 56px 0 48px; }
             .hero-text h1 { font-size: 1.7rem; }
             .hero-text p { font-size: 0.95rem; }
+            .hero-text .hero-pain { font-size: 0.95rem; }
             .hero-text .btn-hero {
                 width: 100%;
                 justify-content: center;
@@ -481,7 +499,7 @@
 </head>
 <body>
 
-    <!-- DOBRA 1: Hero com imagem do produto -->
+    <!-- DOBRA 1: Hero -->
     <section class="hero-curso" id="inicio">
         <div class="hero-bg">
             <div class="hero-particles" id="particles"></div>
@@ -489,9 +507,10 @@
         <div class="container">
             <div class="hero-layout">
                 <div class="hero-text">
-                    <div class="hero-tag">Processo Comercial Solar</div>
-                    <h1>A ligação de elite que gera <span>3x mais propostas.</span></h1>
-                    <p>O curso de pré-vendas que ensina integradores solares a transformar cada lead em proposta comercial enviada. <strong>Pare de desperdiçar leads.</strong></p>
+                    <p class="hero-pain">Você gera leads, investe em tráfego, o telefone toca...<br>e mesmo assim as propostas não saem.</p>
+                    <h1>O problema nunca foi a lead.<br><span>É o que você fala depois do "alô".</span></h1>
+                    <p>A maioria dos integradores não perde venda por falta de lead. Perde porque <strong>não tem processo comercial nenhum.</strong> Liga sem roteiro, improvisa, e torce pra dar certo. Esse curso muda isso em uma tarde.</p>
+                    <p class="hero-proof">Mais de <strong>214 empresas solares</strong> já aplicaram esse processo e triplicaram suas propostas enviadas.</p>
                     <a href="#investimento" class="btn-hero">
                         Quero por R$47
                         <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
@@ -505,8 +524,8 @@
     <section class="preview-section">
         <div class="container">
             <div class="preview-header reveal">
-                <h2>Veja o que tem dentro do curso</h2>
-                <p>8 aulas diretas, sem enrolação. Aplique na próxima ligação.</p>
+                <h2>Em 2 horas você domina o processo que gera 3x mais propostas</h2>
+                <p>8 aulas diretas. Assista hoje, aplique na próxima ligação.</p>
             </div>
             <div class="platform-mockup reveal">
                 <!-- Topbar simulando navegador -->

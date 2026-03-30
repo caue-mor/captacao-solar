@@ -98,13 +98,40 @@
         .gc-hero-sub strong {
             color: #fff;
         }
-        .gc-hero-img {
-            display: block;
-            max-width: 380px;
-            width: 100%;
-            height: auto;
+        .gc-hero-video {
+            position: relative;
+            width: 280px;
+            aspect-ratio: 9/16;
             margin: 0 auto 28px;
             border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid rgba(234,163,32,0.3);
+            background: #000;
+        }
+        .gc-hero-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gc-hero-video .gc-video-play {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 64px; height: 64px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            z-index: 3;
+        }
+        .gc-hero-video .gc-video-play:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        .gc-hero-video .gc-video-play svg {
+            width: 28px; height: 28px;
+            fill: var(--dark);
+            margin-left: 3px;
         }
         .gc-mentor {
             display: inline-flex;
@@ -812,7 +839,7 @@
         /* ========== RESPONSIVO V2 ========== */
         @media (max-width: 900px) {
             .gc-hero h1 { font-size: 2.2rem; }
-            .gc-hero-img { max-width: 340px; }
+            .gc-hero-video { width: 260px; }
             .gc-problem-grid { grid-template-columns: 1fr; }
             .gc-steps-header h2, .gc-for-who-header h2,
             .gc-proof-header h2, .gc-pricing-header h2,
@@ -826,7 +853,7 @@
             .gc-hero { padding: 40px 0 48px; }
             .gc-hero h1 { font-size: 1.6rem; margin-bottom: 14px; }
             .gc-hero-sub { font-size: 0.92rem; margin-bottom: 20px; }
-            .gc-hero-img { max-width: 280px; margin-bottom: -20px; position: relative; z-index: 1; }
+            .gc-hero-video { width: 240px; margin-bottom: -20px; position: relative; z-index: 1; }
             .gc-badge { font-size: 0.7rem; padding: 6px 16px; margin-bottom: 16px; }
             .gc-mentor {
                 flex-direction: column; text-align: center;
@@ -877,7 +904,14 @@
 
                 <p class="gc-hero-sub">Descubra os <strong>5 pilares exatos</strong> que levaram a Saka Solar a ultrapassar <strong>R$ 12 milhoes em faturamento</strong> — e como aplicar no seu negocio solar mesmo que hoje voce dependa 100% de indicacao.</p>
 
-                <img src="workshop-solar-hero.png" alt="Workshop Solar 200k — Daniel Saka" class="gc-hero-img">
+                <div class="gc-hero-video">
+                    <video id="heroVideo" playsinline preload="metadata">
+                        <source src="workshop-video.mp4" type="video/mp4">
+                    </video>
+                    <div class="gc-video-play" id="heroPlay">
+                        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                </div>
 
                 <a href="https://payfast.greenn.com.br/5px56vz" class="btn-cta" onclick="fbq('track','InitiateCheckout')">
                     Quero acesso por R$ 19,90
@@ -938,30 +972,6 @@
                         <li><span class="v">&#10003;</span> Gerir como empresa de alto nivel</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DOBRA 3: Video -->
-    <section class="gc-video">
-        <div class="container">
-            <div class="gc-video-inner reveal">
-                <h2>Assista e entenda o metodo</h2>
-                <p>Daniel Saka explica como saiu de uma operacao local para +12 milhoes faturados no solar.</p>
-
-                <div class="gc-video-placeholder" id="videoWrapper">
-                    <video id="workshopVideo" playsinline preload="metadata" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-                        <source src="workshop-video.mp4" type="video/mp4">
-                    </video>
-                    <div class="gc-video-play" id="videoPlay">
-                        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                    </div>
-                </div>
-
-                <a href="https://payfast.greenn.com.br/5px56vz" class="btn-cta" onclick="fbq('track','InitiateCheckout')">
-                    Quero o metodo por apenas R$ 19,90
-                    <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
-                </a>
             </div>
         </div>
     </section>
@@ -1207,10 +1217,10 @@
         setInterval(update, 1000);
     })();
 
-    // Video player
+    // Hero video player
     (function() {
-        var video = document.getElementById('workshopVideo');
-        var playBtn = document.getElementById('videoPlay');
+        var video = document.getElementById('heroVideo');
+        var playBtn = document.getElementById('heroPlay');
         if (!video || !playBtn) return;
         playBtn.addEventListener('click', function() {
             video.play();

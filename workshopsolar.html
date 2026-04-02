@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WorkShop Solar 200k | De 0 a 200k/mes no Solar — Sem Depender das Indicacoes</title>
-    <meta name="description" content="WorkShop Solar 200k com Daniel Saka (Saka Solar) para faturar de 100k a 200k no segmento solar sem depender das indicacoes. 5 pilares. 7+ anos de mercado. +12 milhoes faturados.">
+    <title>WorkShop Solar 200k | De 0 a 200k/mês no Solar — Sem Depender das Indicações</title>
+    <meta name="description" content="WorkShop Solar 200k com Daniel Saka (Saka Solar) para faturar de 100k a 200k no segmento solar sem depender das indicações. 5 pilares. 7+ anos de mercado. +12 milhões faturados.">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TXJ50YP6R"></script>
     <script>
@@ -34,6 +34,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Override cor primária para o dourado da imagem */
         :root {
             --primary: #EAA320;
             --primary-dark: #D4921A;
@@ -42,10 +43,10 @@
             --gradient-primary: linear-gradient(135deg, #F0B340 0%, #EAA320 50%, #D4921A 100%);
         }
 
-        /* ========== HERO V2 ========== */
+        /* ========== HERO WORKSHOP SOLAR ========== */
         .gc-hero {
             background: var(--dark);
-            padding: 56px 0 64px;
+            padding: 72px 0 80px;
             position: relative;
             overflow: hidden;
         }
@@ -55,8 +56,8 @@
             top: -50%; left: -50%;
             width: 200%; height: 200%;
             background:
-                radial-gradient(circle at 30% 40%, rgba(234,163,32,0.1) 0%, transparent 50%),
-                radial-gradient(circle at 70% 60%, rgba(234,163,32,0.06) 0%, transparent 40%);
+                radial-gradient(circle at 30% 40%, rgba(255,214,0,0.08) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(255,214,0,0.05) 0%, transparent 40%);
             pointer-events: none;
         }
         .gc-hero-inner {
@@ -76,92 +77,86 @@
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            margin-bottom: 24px;
+            margin-bottom: 28px;
         }
         .gc-hero h1 {
-            font-size: 3.2rem;
+            font-size: 3rem;
             font-weight: 900;
             color: var(--text-light);
             letter-spacing: -0.03em;
             line-height: 1.12;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
         }
         .gc-hero h1 span {
             color: var(--primary);
         }
         .gc-hero-sub {
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: #999;
             line-height: 1.7;
-            margin-bottom: 28px;
+            margin-bottom: 32px;
         }
         .gc-hero-sub strong {
             color: #fff;
         }
-        .gc-hero-video {
-            position: relative;
-            width: 280px;
-            aspect-ratio: 9/16;
-            margin: 0 auto 28px;
-            border-radius: 16px;
-            overflow: hidden;
-            border: 2px solid rgba(234,163,32,0.3);
-            background: #000;
-        }
-        .gc-hero-video video {
+        /* Hero image */
+        .gc-hero-img {
+            display: block;
+            max-width: 420px;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            margin: 0 auto 36px;
+            border-radius: 16px;
         }
-        .gc-hero-video .gc-video-play {
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            width: 64px; height: 64px;
-            background: var(--primary);
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            z-index: 3;
-        }
-        .gc-hero-video .gc-video-play:hover {
-            transform: translate(-50%, -50%) scale(1.1);
-        }
-        .gc-hero-video .gc-video-play svg {
-            width: 28px; height: 28px;
-            fill: var(--dark);
-            margin-left: 3px;
-        }
+        /* Mentor card */
         .gc-mentor {
             display: inline-flex;
             align-items: center;
             gap: 16px;
             background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(234,163,32,0.2);
+            border: 1px solid rgba(255,214,0,0.2);
             border-radius: 16px;
             padding: 16px 28px;
-            margin-bottom: 28px;
+            margin-bottom: 36px;
         }
         .gc-mentor-avatar {
-            width: 56px; height: 56px;
+            width: 56px;
+            height: 56px;
             background: var(--primary);
             border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 1.4rem; font-weight: 900; color: var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: var(--dark);
             flex-shrink: 0;
         }
-        .gc-mentor-info { text-align: left; }
-        .gc-mentor-name { font-size: 1rem; font-weight: 800; color: #fff; }
-        .gc-mentor-role { font-size: 0.85rem; color: #888; line-height: 1.4; }
-        .gc-mentor-role strong { color: var(--primary); }
+        .gc-mentor-info {
+            text-align: left;
+        }
+        .gc-mentor-name {
+            font-size: 1rem;
+            font-weight: 800;
+            color: #fff;
+        }
+        .gc-mentor-role {
+            font-size: 0.85rem;
+            color: #888;
+            line-height: 1.4;
+        }
+        .gc-mentor-role strong {
+            color: var(--primary);
+        }
         .gc-stats {
             display: flex;
             justify-content: center;
             gap: 40px;
-            margin-bottom: 32px;
+            margin-bottom: 40px;
         }
-        .gc-stat { text-align: center; }
+        .gc-stat {
+            text-align: center;
+        }
         .gc-stat-number {
             display: block;
             font-size: 1.8rem;
@@ -176,22 +171,7 @@
             text-transform: uppercase;
             letter-spacing: 0.04em;
         }
-        /* Garantia no hero */
-        .gc-hero-guarantee {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 16px;
-            font-size: 0.85rem;
-            color: #888;
-        }
-        .gc-hero-guarantee svg {
-            width: 16px; height: 16px; fill: var(--primary);
-        }
-        .gc-hero-guarantee strong { color: #ccc; }
-
-        /* ========== CTA BUTTON PADRAO ========== */
-        .btn-cta {
+        .gc-hero .btn-hero {
             display: inline-flex;
             align-items: center;
             gap: 10px;
@@ -202,178 +182,34 @@
             font-weight: 800;
             border-radius: 12px;
             text-decoration: none;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
+            transition: all var(--transition-normal);
         }
-        .btn-cta:hover {
+        .gc-hero .btn-hero:hover {
             transform: translateY(-3px);
-            box-shadow: 0 0 30px rgba(234,163,32,0.4);
+            box-shadow: var(--shadow-glow);
         }
-        .btn-cta svg {
-            width: 18px; height: 18px; fill: var(--dark);
-        }
-
-        /* ========== URGENCY BAR ========== */
-        .gc-urgency-bar {
-            background: var(--primary);
-            padding: 12px 0;
-            text-align: center;
-        }
-        .gc-urgency-bar p {
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin: 0;
-        }
-        .gc-urgency-bar strong {
-            font-weight: 900;
-        }
-        #countdown {
-            font-weight: 900;
-            font-size: 1rem;
-        }
-
-        /* ========== PROBLEMA ========== */
-        .gc-problem {
-            padding: 72px 0;
-            background: var(--bg-light);
-        }
-        .gc-problem-header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        .gc-problem-header h2 {
-            font-size: 2.2rem;
-            font-weight: 900;
-            color: var(--text-dark);
-            margin-bottom: 12px;
-        }
-        .gc-problem-header p {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-        }
-        .gc-problem-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .gc-problem-card {
-            padding: 28px;
-            border-radius: 16px;
-            background: var(--bg-off-white);
-            border: 2px solid transparent;
-        }
-        .gc-problem-card.wrong {
-            border-color: #e0e0e0;
-        }
-        .gc-problem-card.right {
-            border-color: var(--primary);
-            background: linear-gradient(to bottom right, #fffbf0, #fff);
-        }
-        .gc-problem-card h3 {
-            font-size: 1.1rem;
-            font-weight: 800;
-            margin-bottom: 16px;
-            color: var(--text-dark);
-        }
-        .gc-problem-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .gc-problem-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            margin-bottom: 12px;
-            line-height: 1.5;
-        }
-        .gc-problem-list li span {
-            flex-shrink: 0;
-            font-weight: 700;
-        }
-        .gc-problem-list li .x { color: #dc3545; }
-        .gc-problem-list li .v { color: #28a745; }
-
-        /* ========== VIDEO SECTION ========== */
-        .gc-video {
-            padding: 72px 0;
-            background: var(--dark);
-        }
-        .gc-video-inner {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .gc-video-inner h2 {
-            font-size: 2rem;
-            font-weight: 900;
-            color: var(--text-light);
-            margin-bottom: 12px;
-        }
-        .gc-video-inner > p {
-            font-size: 1rem;
-            color: #888;
-            margin-bottom: 32px;
-        }
-        .gc-video-placeholder {
-            position: relative;
-            width: 100%;
-            padding-top: 56.25%;
-            background: rgba(255,255,255,0.05);
-            border: 2px solid rgba(234,163,32,0.3);
-            border-radius: 16px;
-            overflow: hidden;
-            margin-bottom: 28px;
-        }
-        .gc-video-placeholder iframe {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            border: none;
-        }
-        .gc-video-play {
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80px; height: 80px;
-            background: var(--primary);
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .gc-video-play:hover {
-            transform: translate(-50%, -50%) scale(1.1);
-        }
-        .gc-video-play svg {
-            width: 32px; height: 32px;
+        .gc-hero .btn-hero svg {
+            width: 18px; height: 18px;
             fill: var(--dark);
-            margin-left: 4px;
         }
 
-        /* ========== 5 PILARES ========== */
+        /* ========== DOBRA 2: OS 5 PASSOS ========== */
         .gc-steps {
-            padding: 72px 0;
+            padding: 80px 0;
             background: var(--bg-light);
         }
         .gc-steps-header {
             text-align: center;
-            margin-bottom: 48px;
+            margin-bottom: 56px;
         }
         .gc-steps-header h2 {
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             font-weight: 900;
             color: var(--text-dark);
             margin-bottom: 12px;
         }
         .gc-steps-header p {
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: var(--text-muted);
         }
         .gc-roadmap {
@@ -384,12 +220,15 @@
             margin: 0 auto;
             position: relative;
         }
+        /* Linha vertical conectora */
         .gc-roadmap::before {
             content: '';
             position: absolute;
-            left: 28px; top: 28px; bottom: 28px;
+            left: 28px;
+            top: 28px;
+            bottom: 28px;
             width: 3px;
-            background: linear-gradient(180deg, var(--primary) 0%, rgba(234,163,32,0.2) 100%);
+            background: linear-gradient(180deg, var(--primary) 0%, rgba(255,214,0,0.2) 100%);
             border-radius: 2px;
         }
         .gc-step {
@@ -401,194 +240,55 @@
         }
         .gc-step-num {
             flex-shrink: 0;
-            width: 56px; height: 56px;
+            width: 56px;
+            height: 56px;
             background: var(--dark);
             border: 3px solid var(--primary);
             border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 1.2rem; font-weight: 900; color: var(--primary);
-            position: relative; z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: var(--primary);
+            position: relative;
+            z-index: 2;
         }
-        .gc-step-content { flex: 1; padding-top: 4px; }
+        .gc-step-content {
+            flex: 1;
+            padding-top: 4px;
+        }
         .gc-step-content h3 {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             font-weight: 800;
             color: var(--text-dark);
             margin-bottom: 6px;
         }
         .gc-step-content p {
-            font-size: 0.92rem;
+            font-size: 0.95rem;
             color: var(--text-muted);
             line-height: 1.6;
-        }
-        .gc-step-result {
-            display: inline-block;
-            margin-top: 8px;
-            font-size: 0.82rem;
-            font-weight: 700;
-            color: var(--primary-dark);
-            background: rgba(234,163,32,0.12);
-            padding: 4px 12px;
-            border-radius: 6px;
         }
         .gc-steps-conclusion {
             text-align: center;
-            margin-top: 40px;
-            padding: 24px 28px;
+            margin-top: 48px;
+            padding: 28px 32px;
             background: var(--dark);
             border-radius: 16px;
             max-width: 700px;
-            margin-left: auto; margin-right: auto;
+            margin-left: auto;
+            margin-right: auto;
         }
         .gc-steps-conclusion p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             color: var(--text-light);
             line-height: 1.6;
         }
-        .gc-steps-conclusion strong { color: var(--primary); }
-
-        /* ========== PARA QUEM E ========== */
-        .gc-for-who {
-            padding: 72px 0;
-            background: var(--dark);
-        }
-        .gc-for-who-header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        .gc-for-who-header h2 {
-            font-size: 2.2rem;
-            font-weight: 900;
-            color: var(--text-light);
-            margin-bottom: 12px;
-        }
-        .gc-for-who-header p {
-            font-size: 1rem;
-            color: #888;
-        }
-        .gc-for-who-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        .gc-for-who-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 14px;
-            padding: 20px;
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(234,163,32,0.15);
-            border-radius: 12px;
-        }
-        .gc-for-who-icon {
-            flex-shrink: 0;
-            width: 28px; height: 28px;
-            background: var(--primary);
-            border-radius: 6px;
-            display: flex; align-items: center; justify-content: center;
-            font-weight: 900; font-size: 0.85rem; color: var(--dark);
-        }
-        .gc-for-who-item p {
-            font-size: 0.95rem;
-            color: #ccc;
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        /* ========== SOCIAL PROOF ========== */
-        .gc-proof {
-            padding: 72px 0;
-            background: var(--bg-light);
-        }
-        .gc-proof-header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        .gc-proof-header h2 {
-            font-size: 2.2rem;
-            font-weight: 900;
-            color: var(--text-dark);
-            margin-bottom: 12px;
-        }
-        .gc-proof-header p {
-            font-size: 1rem;
-            color: var(--text-muted);
-        }
-        .gc-testimonials {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            max-width: 800px;
-            margin: 0 auto 32px;
-        }
-        .gc-testimonial {
-            background: var(--bg-off-white);
-            border: 1px solid #e8e8e8;
-            border-radius: 16px;
-            padding: 24px;
-        }
-        .gc-testimonial-stars {
+        .gc-steps-conclusion strong {
             color: var(--primary);
-            font-size: 0.9rem;
-            margin-bottom: 12px;
-        }
-        .gc-testimonial p {
-            font-size: 0.92rem;
-            color: var(--text-secondary);
-            line-height: 1.6;
-            margin-bottom: 16px;
-            font-style: italic;
-        }
-        .gc-testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .gc-testimonial-avatar {
-            width: 36px; height: 36px;
-            background: var(--primary);
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-weight: 800; font-size: 0.75rem; color: var(--dark);
-        }
-        .gc-testimonial-name {
-            font-size: 0.85rem;
-            font-weight: 700;
-            color: var(--text-dark);
-        }
-        .gc-testimonial-role {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-        }
-        .gc-proof-numbers {
-            display: flex;
-            justify-content: center;
-            gap: 48px;
-            padding: 28px;
-            background: var(--dark);
-            border-radius: 16px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .gc-proof-stat { text-align: center; }
-        .gc-proof-stat-number {
-            display: block;
-            font-size: 2rem;
-            font-weight: 900;
-            color: var(--primary);
-            line-height: 1;
-        }
-        .gc-proof-stat-label {
-            font-size: 0.75rem;
-            color: #888;
-            margin-top: 4px;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
         }
 
-        /* ========== PRICING ========== */
+        /* ========== DOBRA 3: PRICING ========== */
         .gc-pricing {
             padding: 72px 0;
             background: var(--dark);
@@ -607,46 +307,21 @@
         .gc-pricing-header p {
             font-size: 1rem;
             color: #888;
-            margin-bottom: 36px;
-        }
-        .gc-deliverables {
-            text-align: left;
-            list-style: none;
-            padding: 0;
-            margin: 0 0 28px;
-        }
-        .gc-deliverables li {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-            color: #ccc;
-            font-size: 0.95rem;
-        }
-        .gc-deliverables li:last-child { border-bottom: none; }
-        .gc-del-check {
-            flex-shrink: 0;
-            width: 22px; height: 22px;
-            background: var(--primary);
-            border-radius: 6px;
-            display: flex; align-items: center; justify-content: center;
-        }
-        .gc-del-check svg {
-            width: 12px; height: 12px; fill: var(--dark);
+            margin-bottom: 40px;
         }
         .gc-price-card {
             background: var(--primary);
-            border-radius: 24px;
-            padding: 40px 36px;
-            margin-bottom: 24px;
+            border-radius: var(--border-radius-lg);
+            padding: 44px 36px;
+            margin-bottom: 28px;
         }
         .gc-price-de {
             font-size: 0.95rem;
             color: var(--dark);
             opacity: 0.7;
         }
-        .gc-price-de s {
+        .gc-price-de span {
+            text-decoration: line-through;
             font-weight: 700;
         }
         .gc-price-label {
@@ -665,16 +340,28 @@
             margin: 8px 0 4px;
         }
         .gc-price-valor .moeda {
-            font-size: 1.8rem; font-weight: 800; color: var(--dark); margin-top: 14px;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-top: 14px;
         }
         .gc-price-valor .numero {
-            font-size: 5rem; font-weight: 900; color: var(--dark); line-height: 1;
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--dark);
+            line-height: 1;
         }
         .gc-price-valor .centavos {
-            font-size: 1.8rem; font-weight: 800; color: var(--dark); margin-top: 14px;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-top: 14px;
         }
         .gc-price-obs {
-            font-size: 0.85rem; color: var(--dark); opacity: 0.6; margin-bottom: 20px;
+            font-size: 0.85rem;
+            color: var(--dark);
+            opacity: 0.6;
+            margin-bottom: 24px;
         }
         .gc-price-cta {
             display: block;
@@ -686,18 +373,48 @@
             font-weight: 800;
             border-radius: 12px;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: all var(--transition-normal);
         }
         .gc-price-cta:hover {
             background: var(--dark-lighter);
             transform: translateY(-3px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            box-shadow: var(--shadow-lg);
         }
         .gc-price-sub {
-            margin-top: 10px;
+            margin-top: 12px;
             font-size: 0.8rem;
             color: var(--dark);
             opacity: 0.6;
+        }
+        /* Bullets de entrega abaixo do card */
+        .gc-deliverables {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 32px;
+        }
+        .gc-deliverables li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+        .gc-deliverables li:last-child { border-bottom: none; }
+        .gc-del-check {
+            flex-shrink: 0;
+            width: 22px; height: 22px;
+            background: var(--primary);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gc-del-check svg {
+            width: 12px; height: 12px;
+            fill: var(--dark);
         }
         .gc-garantia {
             display: flex;
@@ -706,179 +423,90 @@
             padding: 16px 20px;
             background: rgba(255,255,255,0.05);
             border-radius: 12px;
-            border: 1px solid rgba(234,163,32,0.15);
+            border: 1px solid rgba(255,214,0,0.15);
         }
         .gc-garantia .g-badge {
             flex-shrink: 0;
-            width: 44px; height: 44px;
+            width: 40px; height: 40px;
             background: var(--primary);
             border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-weight: 900; font-size: 1rem; color: var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1rem;
+            color: var(--dark);
         }
         .gc-garantia p {
-            font-size: 0.88rem; color: #aaa; line-height: 1.5; text-align: left;
+            font-size: 0.88rem;
+            color: #aaa;
+            line-height: 1.5;
+            text-align: left;
         }
         .gc-garantia p strong { color: #fff; }
 
-        /* ========== FAQ ========== */
-        .gc-faq {
-            padding: 72px 0;
-            background: var(--bg-light);
-        }
-        .gc-faq-header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        .gc-faq-header h2 {
-            font-size: 2.2rem;
-            font-weight: 900;
-            color: var(--text-dark);
-            margin-bottom: 12px;
-        }
-        .gc-faq-list {
-            max-width: 650px;
-            margin: 0 auto;
-        }
-        .gc-faq-item {
-            border-bottom: 1px solid #e8e8e8;
-        }
-        .gc-faq-question {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 0;
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-family: 'Inter', sans-serif;
-            font-size: 1.05rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            text-align: left;
-        }
-        .gc-faq-question::after {
-            content: '+';
-            font-size: 1.4rem;
-            font-weight: 300;
-            color: var(--primary);
-            transition: transform 0.3s ease;
-            flex-shrink: 0;
-            margin-left: 16px;
-        }
-        .gc-faq-item.active .gc-faq-question::after {
-            content: '-';
-        }
-        .gc-faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-        .gc-faq-answer p {
-            padding: 0 0 20px;
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            line-height: 1.7;
-        }
-        .gc-faq-item.active .gc-faq-answer {
-            max-height: 300px;
-        }
-
-        /* ========== FINAL CTA ========== */
-        .gc-final-cta {
-            padding: 64px 0;
-            background: var(--dark);
-            text-align: center;
-        }
-        .gc-final-cta h2 {
-            font-size: 2rem;
-            font-weight: 900;
-            color: var(--text-light);
-            margin-bottom: 12px;
-        }
-        .gc-final-cta p {
-            font-size: 1rem;
-            color: #888;
-            margin-bottom: 28px;
-        }
-        .gc-final-cta p strong { color: var(--primary); }
-
-        /* ========== STICKY MOBILE CTA ========== */
-        .gc-sticky-cta {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 999;
-            background: var(--dark);
-            border-top: 2px solid var(--primary);
-            padding: 12px 16px;
-            text-align: center;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
-        }
-        .gc-sticky-cta a {
-            display: block;
-            width: 100%;
-            padding: 14px 20px;
-            background: var(--gradient-primary);
-            color: var(--dark);
-            font-size: 1rem;
-            font-weight: 800;
-            border-radius: 10px;
-            text-decoration: none;
-        }
-        .gc-sticky-cta .gc-sticky-price {
-            display: block;
-            font-size: 0.72rem;
-            color: #999;
-            margin-top: 4px;
-        }
-
-        /* ========== RESPONSIVO V2 ========== */
+        /* ========== RESPONSIVO ========== */
         @media (max-width: 900px) {
-            .gc-hero h1 { font-size: 2.5rem; }
-            .gc-hero-video { width: 260px; }
-            .gc-problem-grid { grid-template-columns: 1fr; }
-            .gc-steps-header h2, .gc-for-who-header h2,
-            .gc-proof-header h2, .gc-pricing-header h2,
-            .gc-faq-header h2, .gc-final-cta h2 { font-size: 1.8rem; }
+            .gc-hero h1 { font-size: 2.4rem; }
+            .gc-hero-img { max-width: 360px; }
+            .gc-steps-header h2 { font-size: 2rem; }
+            .gc-pricing-header h2 { font-size: 1.8rem; }
             .gc-stats { gap: 28px; }
-            .gc-for-who-grid { grid-template-columns: 1fr; }
-            .gc-testimonials { grid-template-columns: 1fr; }
-            .gc-proof-numbers { gap: 32px; flex-wrap: wrap; }
         }
         @media (max-width: 600px) {
-            .gc-hero { padding: 40px 0 48px; }
-            .gc-hero h1 { font-size: 1.8rem; margin-bottom: 14px; }
-            .gc-hero-sub { font-size: 0.92rem; margin-bottom: 20px; }
-            .gc-hero-video { width: 240px; margin-bottom: -20px; position: relative; z-index: 1; }
-            .gc-badge { font-size: 0.7rem; padding: 6px 16px; margin-bottom: 16px; }
+            .gc-hero { padding: 48px 0 56px; }
+            .gc-hero h1 {
+                font-size: 1.7rem;
+                margin-bottom: 16px;
+            }
+            .gc-hero-sub {
+                font-size: 0.95rem;
+                margin-bottom: 24px;
+            }
+            .gc-hero-img {
+                max-width: 300px;
+                margin-bottom: 28px;
+            }
+            .gc-badge {
+                font-size: 0.7rem;
+                padding: 6px 16px;
+                margin-bottom: 20px;
+            }
             .gc-mentor {
-                flex-direction: column; text-align: center;
-                padding: 16px 20px; gap: 10px;
+                flex-direction: column;
+                text-align: center;
+                padding: 16px 20px;
+                gap: 10px;
             }
             .gc-mentor-info { text-align: center; }
-            .gc-stats { gap: 16px; flex-wrap: wrap; }
-            .gc-stat-number { font-size: 1.4rem; }
+            .gc-stats {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+            .gc-stat-number { font-size: 1.5rem; }
             .gc-stat-label { font-size: 0.7rem; }
-            .btn-cta { width: 100%; justify-content: center; padding: 16px 24px; position: relative; z-index: 2; }
-            .gc-steps, .gc-problem, .gc-video, .gc-for-who,
-            .gc-proof, .gc-pricing, .gc-faq, .gc-final-cta { padding: 48px 0; }
-            .gc-steps-header h2, .gc-problem-header h2, .gc-for-who-header h2,
-            .gc-proof-header h2, .gc-pricing-header h2,
-            .gc-faq-header h2, .gc-final-cta h2 { font-size: 1.5rem; }
+            .gc-hero .btn-hero {
+                width: 100%;
+                justify-content: center;
+                padding: 16px 24px;
+            }
+            .gc-steps { padding: 56px 0; }
+            .gc-steps-header h2 { font-size: 1.6rem; }
             .gc-roadmap::before { left: 24px; }
-            .gc-step-num { width: 48px; height: 48px; font-size: 1rem; }
+            .gc-step-num {
+                width: 48px; height: 48px;
+                font-size: 1rem;
+            }
             .gc-step-content h3 { font-size: 1.05rem; }
             .gc-step-content p { font-size: 0.88rem; }
+            .gc-steps-conclusion { padding: 24px; }
+            .gc-steps-conclusion p { font-size: 1rem; }
+            .gc-pricing { padding: 56px 0; }
+            .gc-pricing-header h2 { font-size: 1.5rem; }
             .gc-price-card { padding: 32px 24px; }
             .gc-price-valor .numero { font-size: 4rem; }
-            .gc-price-valor .moeda, .gc-price-valor .centavos { font-size: 1.5rem; margin-top: 10px; }
-            .gc-video-inner h2 { font-size: 1.5rem; }
-            .gc-sticky-cta { display: block; }
-            body { padding-bottom: 80px; }
+            .gc-price-valor .moeda,
+            .gc-price-valor .centavos { font-size: 1.5rem; margin-top: 10px; }
         }
     </style>
 </head>
@@ -891,32 +519,28 @@
         </div>
         <div class="container">
             <div class="gc-hero-inner">
-                <div class="gc-badge">WorkShop Solar 200k</div>
+                <div class="gc-badge">WorkShop Solar 200k — Mentoria Estratégica Solar</div>
 
-                <h1>O mapa para sair dos 30k e chegar nos <span>R$ 200k/mes</span> no solar</h1>
+                <h1>O mapa para faturar <span>R$ 100k a R$ 200k/mês</span> no solar — sem depender das indicações.</h1>
 
-                <p class="gc-hero-sub">Descubra os <strong>5 pilares exatos</strong> que levaram a Saka Solar a ultrapassar <strong>R$ 12 milhoes em faturamento</strong> — e como aplicar no seu negocio solar mesmo que hoje voce dependa 100% de indicacao.</p>
+                <p class="gc-hero-sub">A maioria dos integradores trava nos mesmos <strong>30 a 50 mil por mês</strong> porque tenta crescer sem estratégia. Neste WorkShop Solar 200k, <strong>Daniel Saka</strong> revela o método de 5 passos que usou para ultrapassar 12 milhões em faturamento no setor — e como você aplica isso no seu negócio solar.</p>
 
-                <div class="gc-hero-video">
-                    <video id="heroVideo" playsinline preload="metadata" poster="workshop-thumb.jpg">
-                        <source src="workshop-video.mp4" type="video/mp4">
-                    </video>
-                    <div class="gc-video-play" id="heroPlay">
-                        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                    </div>
-                </div>
+                <img src="workshop-solar-hero.png" alt="Workshop Solar — R$ 100k a R$ 200k/mês" class="gc-hero-img">
 
-                <a href="https://pay.lowify.com.br/checkout?product_id=2ix8oi" class="btn-cta" onclick="fbq('track','InitiateCheckout')">
-                    Quero acesso por R$ 19,90
+                <a href="#investimento" class="btn-hero" onclick="fbq('track','InitiateCheckout')">
+                    Quero o WorkShop Solar 200k por R$ 19,90
                     <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
                 </a>
 
-                <div class="gc-hero-guarantee">
-                    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-                    <span><strong>Garantia de 7 dias</strong> — Satisfacao ou reembolso total</span>
-                </div>
+                <div style="margin-top: 40px;"></div>
 
-                <div style="margin-top: 32px;"></div>
+                <div class="gc-mentor reveal">
+                    <div class="gc-mentor-avatar">DS</div>
+                    <div class="gc-mentor-info">
+                        <div class="gc-mentor-name">Daniel Saka</div>
+                        <div class="gc-mentor-role">Proprietário da <strong>Saka Solar</strong> · 7+ anos no mercado solar</div>
+                    </div>
+                </div>
 
                 <div class="gc-stats reveal">
                     <div class="gc-stat">
@@ -929,248 +553,114 @@
                     </div>
                     <div class="gc-stat">
                         <span class="gc-stat-number">5</span>
-                        <span class="gc-stat-label">Pilares do Metodo</span>
+                        <span class="gc-stat-label">Pilares do Método</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- DOBRA 2: O Problema -->
-    <section class="gc-problem">
-        <div class="container">
-            <div class="gc-problem-header reveal">
-                <h2>Voce se identifica com algum desses cenarios?</h2>
-                <p>A maioria dos integradores trava nos mesmos 30-50k/mes porque repete o mesmo ciclo.</p>
-            </div>
-
-            <div class="gc-problem-grid">
-                <div class="gc-problem-card wrong reveal">
-                    <h3>O que trava seu crescimento</h3>
-                    <ul class="gc-problem-list">
-                        <li><span class="x">&#10005;</span> Depende de indicacao para fechar novos projetos</li>
-                        <li><span class="x">&#10005;</span> Briga por preco com 50 concorrentes na mesma cidade</li>
-                        <li><span class="x">&#10005;</span> Nao tem processo comercial — vende no improviso</li>
-                        <li><span class="x">&#10005;</span> Fatura 30-50k e nao sabe como escalar</li>
-                        <li><span class="x">&#10005;</span> Nao tem presenca digital relevante</li>
-                    </ul>
-                </div>
-                <div class="gc-problem-card right reveal">
-                    <h3>O que voce vai aprender</h3>
-                    <ul class="gc-problem-list">
-                        <li><span class="v">&#10003;</span> Gerar demanda todos os dias sem depender de indicacao</li>
-                        <li><span class="v">&#10003;</span> Se posicionar para o cliente escolher VOCE</li>
-                        <li><span class="v">&#10003;</span> Fechar contratos com taxa acima de 40%</li>
-                        <li><span class="v">&#10003;</span> Construir autoridade digital na sua regiao</li>
-                        <li><span class="v">&#10003;</span> Gerir como empresa de alto nivel</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DOBRA 4: Os 5 Pilares -->
+    <!-- DOBRA 2: Os 5 Passos -->
     <section class="gc-steps">
         <div class="container">
             <div class="gc-steps-header reveal">
-                <h2>Os 5 pilares para chegar nos 200k/mes no solar</h2>
-                <p>O caminho que separa quem fatura 30k de quem fatura 200k nao e sorte. E metodo.</p>
+                <h2>Os 5 pilares para chegar nos 200k/mês no solar</h2>
+                <p>O caminho que separa quem fatura 30k de quem fatura 200k não é sorte. É método.</p>
             </div>
 
             <div class="gc-roadmap">
                 <div class="gc-step reveal">
                     <div class="gc-step-num">1</div>
                     <div class="gc-step-content">
-                        <h3>Maquina de Geracao de Demanda</h3>
-                        <p>O sistema para atrair clientes de alto valor todos os dias — sem depender de indicacao, porta a porta ou licitacao.</p>
-                        <span class="gc-step-result">Resultado: fluxo previsivel de clientes qualificados</span>
+                        <h3>Máquina de Geração de Demanda</h3>
+                        <p>O sistema para atrair clientes de alto valor todos os dias sem depender de indicação, porta a porta ou licitação.</p>
                     </div>
                 </div>
 
                 <div class="gc-step reveal">
                     <div class="gc-step-num">2</div>
                     <div class="gc-step-content">
-                        <h3>Posicionamento que Elimina a Concorrencia</h3>
-                        <p>Como se posicionar no mercado solar para que o cliente escolha voce — mesmo com 50 concorrentes cobrando menos.</p>
-                        <span class="gc-step-result">Resultado: vender pelo valor, nao pelo preco</span>
+                        <h3>Posicionamento que Elimina a Concorrência</h3>
+                        <p>Como se posicionar no mercado solar para que o cliente escolha você — mesmo com 50 concorrentes na mesma cidade cobrando menos.</p>
                     </div>
                 </div>
 
                 <div class="gc-step reveal">
                     <div class="gc-step-num">3</div>
                     <div class="gc-step-content">
-                        <h3>Processo Comercial de Alta Conversao</h3>
-                        <p>Como transformar orcamento em contrato assinado com taxa de fechamento acima de 40% — mesmo vendendo mais caro.</p>
-                        <span class="gc-step-result">Resultado: taxa de fechamento 2x a 3x maior</span>
+                        <h3>Processo Comercial de Alta Conversão</h3>
+                        <p>Como transformar orçamento em contrato assinado com taxa de fechamento acima de 40% — mesmo vendendo mais caro que o concorrente.</p>
                     </div>
                 </div>
 
                 <div class="gc-step reveal">
                     <div class="gc-step-num">4</div>
                     <div class="gc-step-content">
-                        <h3>Relevancia Digital</h3>
-                        <p>Como construir uma presenca digital que gera autoridade e atrai clientes todos os dias — tornando sua empresa a referencia da regiao.</p>
-                        <span class="gc-step-result">Resultado: clientes chegando pelo Instagram e Google</span>
+                        <h3>Relevância Digital</h3>
+                        <p>Como construir uma presença digital que gera autoridade e atrai clientes todos os dias — tornando sua empresa a referência solar da sua região.</p>
                     </div>
                 </div>
 
                 <div class="gc-step reveal">
                     <div class="gc-step-num">5</div>
                     <div class="gc-step-content">
-                        <h3>Gestao de Elite</h3>
-                        <p>Como gerir seu negocio solar com mentalidade de empresa de alto nivel. Processos, equipe e decisoes que fazem a diferenca.</p>
-                        <span class="gc-step-result">Resultado: empresa funcionando SEM voce no operacional</span>
+                        <h3>Gestão de Elite</h3>
+                        <p>Como gerir seu negócio solar com mentalidade de empresa de alto nível. Processos, equipe e decisões que separam quem fatura 30k de quem fatura 200k/mês.</p>
                     </div>
                 </div>
             </div>
 
             <div class="gc-steps-conclusion reveal">
-                <p>Esses 5 pilares levaram a Saka Solar a <strong>mais de 12 milhoes faturados</strong>. Neste workshop, Daniel abre o jogo sobre cada um deles.</p>
+                <p>Esses 5 pilares levaram a Saka Solar de uma operação local para <strong>mais de 12 milhões faturados</strong>. No WorkShop Solar 200k, Daniell abre o jogo sobre cada um deles.</p>
             </div>
         </div>
     </section>
 
-    <!-- DOBRA 5: Para Quem E -->
-    <section class="gc-for-who">
-        <div class="container">
-            <div class="gc-for-who-header reveal">
-                <h2>Para quem e o Workshop Solar 200k?</h2>
-                <p>Se voce se encaixa em pelo menos um desses perfis, esse workshop foi feito pra voce.</p>
-            </div>
-
-            <div class="gc-for-who-grid">
-                <div class="gc-for-who-item reveal">
-                    <div class="gc-for-who-icon">&#10003;</div>
-                    <p><strong>Integrador solar</strong> que fatura de 10k a 100k/mes e quer escalar com estrategia</p>
-                </div>
-                <div class="gc-for-who-item reveal">
-                    <div class="gc-for-who-icon">&#10003;</div>
-                    <p><strong>Dono de empresa solar</strong> que depende de indicacao e quer previsibilidade</p>
-                </div>
-                <div class="gc-for-who-item reveal">
-                    <div class="gc-for-who-icon">&#10003;</div>
-                    <p><strong>Vendedor do setor solar</strong> que quer montar o proprio negocio com metodo</p>
-                </div>
-                <div class="gc-for-who-item reveal">
-                    <div class="gc-for-who-icon">&#10003;</div>
-                    <p><strong>Quem quer entrar no mercado solar</strong> e comecar ja com a estrategia certa</p>
-                </div>
-            </div>
-
-            <div style="text-align:center; margin-top: 40px;">
-                <a href="https://pay.lowify.com.br/checkout?product_id=2ix8oi" class="btn-cta" onclick="fbq('track','InitiateCheckout')">
-                    Quero acesso ao Workshop por R$ 19,90
-                    <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- DOBRA 6: Pricing + CTA -->
+    <!-- DOBRA 3: Pricing + CTA -->
     <section class="gc-pricing" id="investimento">
         <div class="container">
             <div class="gc-pricing-inner">
                 <div class="gc-pricing-header reveal">
-                    <h2>Acesse o Workshop Solar 200k agora</h2>
-                    <p>O investimento que custa menos que um almoco — e pode mudar o patamar do seu negocio solar.</p>
+                    <h2>Acesse o WorkShop Solar 200k agora</h2>
+                    <p>A mentoria estratégica que custa menos que um almoço — e pode mudar o patamar do seu negócio solar.</p>
                 </div>
 
                 <ul class="gc-deliverables reveal">
                     <li>
                         <div class="gc-del-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></div>
-                        Workshop completo com Daniel Saka (Saka Solar)
+                        Mentoria completa com Daniel Saka (Saka Solar)
                     </li>
                     <li>
                         <div class="gc-del-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></div>
-                        Os 5 pilares para faturar de 100k a 200k/mes
+                        Os 5 pilares para faturar de 100k a 200k/mês
                     </li>
                     <li>
                         <div class="gc-del-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></div>
-                        Estrategias testadas em 7+ anos de mercado solar
+                        Estratégias testadas em 7+ anos de mercado solar
                     </li>
                     <li>
                         <div class="gc-del-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></div>
-                        Acesso ao grupo exclusivo logo apos o pagamento
-                    </li>
-                    <li>
-                        <div class="gc-del-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></div>
-                        Garantia incondicional de 7 dias
+                        Acesso imediato após o pagamento
                     </li>
                 </ul>
 
                 <div class="gc-price-card reveal">
-                    <div class="gc-price-de">De <s>R$ 197,00</s></div>
+                    <div class="gc-price-de">De <span>R$ 197,00</span></div>
                     <div class="gc-price-label">Por apenas</div>
                     <div class="gc-price-valor">
                         <span class="moeda">R$</span>
                         <span class="numero">19</span>
                         <span class="centavos">,90</span>
                     </div>
-                    <div class="gc-price-obs">Pagamento unico — acesso ao grupo logo apos o pagamento</div>
-                    <a href="https://pay.lowify.com.br/checkout?product_id=2ix8oi" class="gc-price-cta" onclick="fbq('track','InitiateCheckout')">QUERO ACESSO AGORA</a>
-                    <p class="gc-price-sub">Pagamento seguro via Lowify</p>
+                    <div class="gc-price-obs">Pagamento único</div>
+                    <a href="https://pay.lowify.com.br/checkout?product_id=2ix8oi" class="gc-price-cta" onclick="fbq('track','InitiateCheckout')">Quero Acesso ao WorkShop Solar 200k</a>
+                    <p class="gc-price-sub">Acesso imediato</p>
                 </div>
 
                 <div class="gc-garantia reveal">
-                    <div class="g-badge">7d</div>
-                    <p><strong>Garantia total de 7 dias.</strong> Se o Workshop Solar 200k nao fizer sentido pra voce, devolvemos 100% do valor. Sem perguntas, sem burocracia.</p>
+                    <div class="g-badge">7</div>
+                    <p><strong>Garantia de 7 dias.</strong> Se o WorkShop Solar 200k não fizer sentido pra você, devolvemos 100% do valor. Sem perguntas.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DOBRA 8: FAQ -->
-    <section class="gc-faq">
-        <div class="container">
-            <div class="gc-faq-header reveal">
-                <h2>Perguntas frequentes</h2>
-            </div>
-
-            <div class="gc-faq-list">
-                <div class="gc-faq-item">
-                    <button class="gc-faq-question">Para quem e esse workshop?</button>
-                    <div class="gc-faq-answer">
-                        <p>Para integradores solares, donos de empresas do setor e vendedores que querem escalar o faturamento com estrategia. Serve tanto para quem esta comecando quanto para quem ja fatura e quer chegar nos 200k/mes.</p>
-                    </div>
-                </div>
-                <div class="gc-faq-item">
-                    <button class="gc-faq-question">Recebo o acesso na hora?</button>
-                    <div class="gc-faq-answer">
-                        <p>Sim! Apos a confirmacao do pagamento, voce e direcionado para o grupo exclusivo da comunidade. La voce recebe todo o conteudo do workshop.</p>
-                    </div>
-                </div>
-                <div class="gc-faq-item">
-                    <button class="gc-faq-question">Funciona pra quem esta comecando no solar?</button>
-                    <div class="gc-faq-answer">
-                        <p>Sim. Os 5 pilares sao a base de qualquer empresa solar de sucesso. Se voce esta comecando, vai pular meses de tentativa e erro ao aplicar o metodo desde o inicio.</p>
-                    </div>
-                </div>
-                <div class="gc-faq-item">
-                    <button class="gc-faq-question">E se eu nao gostar?</button>
-                    <div class="gc-faq-answer">
-                        <p>Voce tem 7 dias de garantia incondicional. Se nao fizer sentido, basta pedir reembolso e devolvemos 100% — sem perguntas.</p>
-                    </div>
-                </div>
-                <div class="gc-faq-item">
-                    <button class="gc-faq-question">Vale a pena por R$ 19,90?</button>
-                    <div class="gc-faq-answer">
-                        <p>Daniel investiu 7 anos e mais de R$ 12 milhoes em faturamento para validar esse metodo. Voce esta acessando o resultado concentrado por menos do que um almoco. A pergunta e: voce pode se dar ao luxo de nao saber isso?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DOBRA 9: CTA Final -->
-    <section class="gc-final-cta">
-        <div class="container">
-            <div class="reveal">
-                <h2>Falta 1 passo para mudar seu negocio solar</h2>
-                <p>Mais de <strong>500 integradores</strong> ja acessaram o metodo. O proximo pode ser voce.</p>
-                <a href="https://pay.lowify.com.br/checkout?product_id=2ix8oi" class="btn-cta" onclick="fbq('track','InitiateCheckout')">
-                    Quero o Workshop Solar 200k por R$ 19,90
-                    <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
-                </a>
             </div>
         </div>
     </section>
@@ -1182,94 +672,6 @@
         </div>
     </footer>
 
-    <!-- STICKY MOBILE CTA -->
-    <div class="gc-sticky-cta" id="stickyCta">
-        <a href="https://pay.lowify.com.br/checkout?product_id=2ix8oi" onclick="fbq('track','InitiateCheckout')">
-            Quero acesso por R$ 19,90
-        </a>
-        <span class="gc-sticky-price">Garantia de 7 dias — Pagamento unico</span>
-    </div>
-
     <script src="script.js"></script>
-    <script>
-    // Countdown timer — reseta a cada 24h
-    (function() {
-        var now = new Date();
-        var endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
-        var el = document.getElementById('countdown');
-        if (!el) return;
-        function update() {
-            var diff = endOfDay - new Date();
-            if (diff <= 0) { el.textContent = 'Encerrado!'; return; }
-            var h = Math.floor(diff / 3600000);
-            var m = Math.floor((diff % 3600000) / 60000);
-            var s = Math.floor((diff % 60000) / 1000);
-            el.textContent = (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
-        }
-        update();
-        setInterval(update, 1000);
-    })();
-
-    // Hero video player
-    (function() {
-        var video = document.getElementById('heroVideo');
-        var playBtn = document.getElementById('heroPlay');
-        if (!video || !playBtn) return;
-        playBtn.addEventListener('click', function() {
-            video.play();
-            video.setAttribute('controls', 'controls');
-            playBtn.style.display = 'none';
-        });
-        video.addEventListener('pause', function() {
-            if (video.ended) {
-                playBtn.style.display = 'flex';
-                video.removeAttribute('controls');
-            }
-        });
-        video.addEventListener('ended', function() {
-            playBtn.style.display = 'flex';
-            video.removeAttribute('controls');
-        });
-    })();
-
-    // FAQ accordion
-    document.querySelectorAll('.gc-faq-question').forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            var item = this.parentElement;
-            var wasActive = item.classList.contains('active');
-            document.querySelectorAll('.gc-faq-item').forEach(function(i) {
-                i.classList.remove('active');
-            });
-            if (!wasActive) item.classList.add('active');
-        });
-    });
-
-    // Sticky CTA — mostra apos scroll no mobile
-    (function() {
-        var sticky = document.getElementById('stickyCta');
-        if (!sticky) return;
-        var shown = false;
-        window.addEventListener('scroll', function() {
-            if (window.innerWidth > 600) { sticky.style.display = 'none'; return; }
-            if (window.scrollY > 600 && !shown) {
-                sticky.style.display = 'block';
-                shown = true;
-            }
-        });
-    })();
-
-    // ViewContent event ao scrollar 50%
-    (function() {
-        var fired = false;
-        window.addEventListener('scroll', function() {
-            if (fired) return;
-            var scrollPct = (window.scrollY + window.innerHeight) / document.body.scrollHeight;
-            if (scrollPct > 0.5) {
-                fired = true;
-                if (typeof fbq === 'function') fbq('track', 'ViewContent');
-            }
-        });
-    })();
-    </script>
 </body>
 </html>

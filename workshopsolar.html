@@ -193,102 +193,7 @@
             fill: var(--dark);
         }
 
-        /* ========== DOBRA 2: OS 5 PASSOS ========== */
-        .gc-steps {
-            padding: 80px 0;
-            background: var(--bg-light);
-        }
-        .gc-steps-header {
-            text-align: center;
-            margin-bottom: 56px;
-        }
-        .gc-steps-header h2 {
-            font-size: 2.4rem;
-            font-weight: 900;
-            color: var(--text-dark);
-            margin-bottom: 12px;
-        }
-        .gc-steps-header p {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-        }
-        .gc-roadmap {
-            display: flex;
-            flex-direction: column;
-            gap: 0;
-            max-width: 700px;
-            margin: 0 auto;
-            position: relative;
-        }
-        /* Linha vertical conectora */
-        .gc-roadmap::before {
-            content: '';
-            position: absolute;
-            left: 28px;
-            top: 28px;
-            bottom: 28px;
-            width: 3px;
-            background: linear-gradient(180deg, var(--primary) 0%, rgba(255,214,0,0.2) 100%);
-            border-radius: 2px;
-        }
-        .gc-step {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            padding: 24px 0;
-            position: relative;
-        }
-        .gc-step-num {
-            flex-shrink: 0;
-            width: 56px;
-            height: 56px;
-            background: var(--dark);
-            border: 3px solid var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            font-weight: 900;
-            color: var(--primary);
-            position: relative;
-            z-index: 2;
-        }
-        .gc-step-content {
-            flex: 1;
-            padding-top: 4px;
-        }
-        .gc-step-content h3 {
-            font-size: 1.2rem;
-            font-weight: 800;
-            color: var(--text-dark);
-            margin-bottom: 6px;
-        }
-        .gc-step-content p {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-        .gc-steps-conclusion {
-            text-align: center;
-            margin-top: 48px;
-            padding: 28px 32px;
-            background: var(--dark);
-            border-radius: 16px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .gc-steps-conclusion p {
-            font-size: 1.2rem;
-            color: var(--text-light);
-            line-height: 1.6;
-        }
-        .gc-steps-conclusion strong {
-            color: var(--primary);
-        }
-
-        /* ========== DOBRA 3: PRICING ========== */
+        /* ========== DOBRA 2: PRICING ========== */
         .gc-pricing {
             padding: 72px 0;
             background: var(--dark);
@@ -449,7 +354,6 @@
         @media (max-width: 900px) {
             .gc-hero h1 { font-size: 2.4rem; }
             .gc-hero-img { max-width: 360px; }
-            .gc-steps-header h2 { font-size: 2rem; }
             .gc-pricing-header h2 { font-size: 1.8rem; }
             .gc-stats { gap: 28px; }
         }
@@ -490,17 +394,6 @@
                 justify-content: center;
                 padding: 16px 24px;
             }
-            .gc-steps { padding: 56px 0; }
-            .gc-steps-header h2 { font-size: 1.6rem; }
-            .gc-roadmap::before { left: 24px; }
-            .gc-step-num {
-                width: 48px; height: 48px;
-                font-size: 1rem;
-            }
-            .gc-step-content h3 { font-size: 1.05rem; }
-            .gc-step-content p { font-size: 0.88rem; }
-            .gc-steps-conclusion { padding: 24px; }
-            .gc-steps-conclusion p { font-size: 1rem; }
             .gc-pricing { padding: 56px 0; }
             .gc-pricing-header h2 { font-size: 1.5rem; }
             .gc-price-card { padding: 32px 24px; }
@@ -560,63 +453,7 @@
         </div>
     </section>
 
-    <!-- DOBRA 2: Os 5 Passos -->
-    <section class="gc-steps">
-        <div class="container">
-            <div class="gc-steps-header reveal">
-                <h2>Os 5 pilares para chegar nos 200k/mês no solar</h2>
-                <p>O caminho que separa quem fatura 30k de quem fatura 200k não é sorte. É método.</p>
-            </div>
-
-            <div class="gc-roadmap">
-                <div class="gc-step reveal">
-                    <div class="gc-step-num">1</div>
-                    <div class="gc-step-content">
-                        <h3>Máquina de Geração de Demanda</h3>
-                        <p>O sistema para atrair clientes de alto valor todos os dias sem depender de indicação, porta a porta ou licitação.</p>
-                    </div>
-                </div>
-
-                <div class="gc-step reveal">
-                    <div class="gc-step-num">2</div>
-                    <div class="gc-step-content">
-                        <h3>Posicionamento que Elimina a Concorrência</h3>
-                        <p>Como se posicionar no mercado solar para que o cliente escolha você — mesmo com 50 concorrentes na mesma cidade cobrando menos.</p>
-                    </div>
-                </div>
-
-                <div class="gc-step reveal">
-                    <div class="gc-step-num">3</div>
-                    <div class="gc-step-content">
-                        <h3>Processo Comercial de Alta Conversão</h3>
-                        <p>Como transformar orçamento em contrato assinado com taxa de fechamento acima de 40% — mesmo vendendo mais caro que o concorrente.</p>
-                    </div>
-                </div>
-
-                <div class="gc-step reveal">
-                    <div class="gc-step-num">4</div>
-                    <div class="gc-step-content">
-                        <h3>Relevância Digital</h3>
-                        <p>Como construir uma presença digital que gera autoridade e atrai clientes todos os dias — tornando sua empresa a referência solar da sua região.</p>
-                    </div>
-                </div>
-
-                <div class="gc-step reveal">
-                    <div class="gc-step-num">5</div>
-                    <div class="gc-step-content">
-                        <h3>Gestão de Elite</h3>
-                        <p>Como gerir seu negócio solar com mentalidade de empresa de alto nível. Processos, equipe e decisões que separam quem fatura 30k de quem fatura 200k/mês.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gc-steps-conclusion reveal">
-                <p>Esses 5 pilares levaram a Saka Solar de uma operação local para <strong>mais de 12 milhões faturados</strong>. No WorkShop Solar 200k, Daniell abre o jogo sobre cada um deles.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- DOBRA 3: Pricing + CTA -->
+    <!-- DOBRA 2: Pricing + CTA -->
     <section class="gc-pricing" id="investimento">
         <div class="container">
             <div class="gc-pricing-inner">

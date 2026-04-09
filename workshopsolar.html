@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WorkShop Solar 200k | De 0 a 200k/mês no Solar — Sem Depender das Indicações</title>
-    <meta name="description" content="WorkShop Solar 200k com Daniel Saka (Saka Solar) para faturar de 100k a 200k no segmento solar sem depender das indicações. 5 pilares. 7+ anos de mercado. +12 milhões faturados.">
+    <title>WorkShop Solar 200k | De 0 a 200k/mês no Solar — Evento Gratuito 14/04</title>
+    <meta name="description" content="Workshop Solar 200k GRATUITO com Daniel Saka (Saka Solar) — 14 de abril de 2026. Descubra como faturar de 100k a 200k/mês no solar sem depender das indicações.">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TXJ50YP6R"></script>
     <script>
@@ -34,7 +34,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Override cor primária para o dourado da imagem */
+        /* Override cor primaria para o dourado da imagem */
         :root {
             --primary: #EAA320;
             --primary-dark: #D4921A;
@@ -107,6 +107,40 @@
             height: auto;
             margin: 0 auto 36px;
             border-radius: 16px;
+        }
+        /* Date badge */
+        .gc-date-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(234, 163, 32, 0.15);
+            border: 2px solid var(--primary);
+            border-radius: 12px;
+            padding: 14px 28px;
+            margin-bottom: 28px;
+        }
+        .gc-date-badge svg {
+            width: 22px; height: 22px;
+            fill: var(--primary);
+        }
+        .gc-date-badge span {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: 0.02em;
+        }
+        /* Free badge */
+        .gc-free-badge {
+            display: inline-block;
+            background: #25D366;
+            color: #fff;
+            padding: 6px 18px;
+            border-radius: 100px;
+            font-size: 0.82rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 20px;
         }
         /* Mentor card */
         .gc-mentor {
@@ -183,6 +217,8 @@
             border-radius: 12px;
             text-decoration: none;
             transition: all var(--transition-normal);
+            border: none;
+            cursor: pointer;
         }
         .gc-hero .btn-hero:hover {
             transform: translateY(-3px);
@@ -193,105 +229,27 @@
             fill: var(--dark);
         }
 
-        /* ========== DOBRA 2: PRICING ========== */
-        .gc-pricing {
+        /* ========== DOBRA 2: O QUE VOCE VAI APRENDER ========== */
+        .gc-content {
             padding: 72px 0;
             background: var(--dark);
         }
-        .gc-pricing-inner {
-            max-width: 520px;
+        .gc-content-inner {
+            max-width: 600px;
             margin: 0 auto;
             text-align: center;
         }
-        .gc-pricing-header h2 {
+        .gc-content-header h2 {
             font-size: 2.2rem;
             font-weight: 900;
             color: var(--text-light);
             margin-bottom: 12px;
         }
-        .gc-pricing-header p {
+        .gc-content-header p {
             font-size: 1rem;
             color: #888;
             margin-bottom: 40px;
         }
-        .gc-price-card {
-            background: var(--primary);
-            border-radius: var(--border-radius-lg);
-            padding: 44px 36px;
-            margin-bottom: 28px;
-        }
-        .gc-price-de {
-            font-size: 0.95rem;
-            color: var(--dark);
-            opacity: 0.7;
-        }
-        .gc-price-de span {
-            text-decoration: line-through;
-            font-weight: 700;
-        }
-        .gc-price-label {
-            font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            color: var(--dark);
-            margin-top: 4px;
-        }
-        .gc-price-valor {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 4px;
-            margin: 8px 0 4px;
-        }
-        .gc-price-valor .moeda {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--dark);
-            margin-top: 14px;
-        }
-        .gc-price-valor .numero {
-            font-size: 5rem;
-            font-weight: 900;
-            color: var(--dark);
-            line-height: 1;
-        }
-        .gc-price-valor .centavos {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--dark);
-            margin-top: 14px;
-        }
-        .gc-price-obs {
-            font-size: 0.85rem;
-            color: var(--dark);
-            opacity: 0.6;
-            margin-bottom: 24px;
-        }
-        .gc-price-cta {
-            display: block;
-            width: 100%;
-            padding: 18px 24px;
-            background: var(--dark);
-            color: var(--text-light);
-            font-size: 1.1rem;
-            font-weight: 800;
-            border-radius: 12px;
-            text-decoration: none;
-            transition: all var(--transition-normal);
-        }
-        .gc-price-cta:hover {
-            background: var(--dark-lighter);
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-lg);
-        }
-        .gc-price-sub {
-            margin-top: 12px;
-            font-size: 0.8rem;
-            color: var(--dark);
-            opacity: 0.6;
-        }
-        /* Bullets de entrega abaixo do card */
         .gc-deliverables {
             text-align: left;
             list-style: none;
@@ -321,40 +279,186 @@
             width: 12px; height: 12px;
             fill: var(--dark);
         }
-        .gc-garantia {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 16px 20px;
-            background: rgba(255,255,255,0.05);
-            border-radius: 12px;
-            border: 1px solid rgba(255,214,0,0.15);
+        .gc-cta-bottom {
+            margin-top: 32px;
         }
-        .gc-garantia .g-badge {
-            flex-shrink: 0;
-            width: 40px; height: 40px;
-            background: var(--primary);
+        .gc-cta-bottom .btn-hero {
+            width: 100%;
+            justify-content: center;
+            padding: 18px 24px;
+            background: var(--gradient-primary);
+            color: var(--dark);
+            font-size: 1.1rem;
+            font-weight: 800;
+            border-radius: 12px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all var(--transition-normal);
+            border: none;
+            cursor: pointer;
+        }
+        .gc-cta-bottom .btn-hero:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        /* ========== MODAL / POPUP ========== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.75);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            backdrop-filter: blur(4px);
+        }
+        .modal-overlay.active {
+            display: flex;
+        }
+        .modal-card {
+            background: #111;
+            border: 1px solid rgba(234, 163, 32, 0.3);
+            border-radius: 20px;
+            padding: 40px 32px;
+            max-width: 440px;
+            width: 100%;
+            position: relative;
+            animation: modalSlideIn 0.3s ease;
+        }
+        @keyframes modalSlideIn {
+            from { opacity: 0; transform: translateY(30px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .modal-close {
+            position: absolute;
+            top: 16px; right: 16px;
+            width: 32px; height: 32px;
+            background: rgba(255,255,255,0.08);
+            border: none;
             border-radius: 50%;
+            color: #888;
+            font-size: 1.2rem;
+            cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all 0.2s;
+        }
+        .modal-close:hover {
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+        }
+        .modal-title {
+            font-size: 1.4rem;
             font-weight: 900;
-            font-size: 1rem;
-            color: var(--dark);
+            color: #fff;
+            text-align: center;
+            margin-bottom: 6px;
         }
-        .gc-garantia p {
-            font-size: 0.88rem;
+        .modal-subtitle {
+            font-size: 0.9rem;
+            color: #888;
+            text-align: center;
+            margin-bottom: 28px;
+        }
+        .modal-subtitle strong {
+            color: var(--primary);
+        }
+        .form-group {
+            margin-bottom: 16px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 700;
             color: #aaa;
-            line-height: 1.5;
-            text-align: left;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
         }
-        .gc-garantia p strong { color: #fff; }
+        .form-group input {
+            width: 100%;
+            padding: 14px 16px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: #fff;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .form-group input::placeholder {
+            color: #555;
+        }
+        .form-group input:focus {
+            border-color: var(--primary);
+        }
+        .form-group input.error {
+            border-color: #e74c3c;
+        }
+        .form-error {
+            font-size: 0.78rem;
+            color: #e74c3c;
+            margin-top: 4px;
+            display: none;
+        }
+        .form-group input.error + .form-error {
+            display: block;
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 16px 24px;
+            background: var(--gradient-primary);
+            color: var(--dark);
+            font-family: 'Inter', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 800;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 8px;
+        }
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(234, 163, 32, 0.4);
+        }
+        .btn-submit:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        .btn-submit .spinner {
+            display: none;
+            width: 20px; height: 20px;
+            border: 3px solid rgba(0,0,0,0.2);
+            border-top-color: var(--dark);
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+            margin: 0 auto;
+        }
+        .btn-submit.loading .btn-text { display: none; }
+        .btn-submit.loading .spinner { display: inline-block; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .modal-privacy {
+            font-size: 0.75rem;
+            color: #555;
+            text-align: center;
+            margin-top: 12px;
+        }
 
         /* ========== RESPONSIVO ========== */
         @media (max-width: 900px) {
             .gc-hero h1 { font-size: 2.4rem; }
             .gc-hero-img { max-width: 360px; }
-            .gc-pricing-header h2 { font-size: 1.8rem; }
+            .gc-content-header h2 { font-size: 1.8rem; }
             .gc-stats { gap: 28px; }
         }
         @media (max-width: 600px) {
@@ -376,6 +480,12 @@
                 padding: 6px 16px;
                 margin-bottom: 20px;
             }
+            .gc-date-badge {
+                padding: 10px 20px;
+            }
+            .gc-date-badge span {
+                font-size: 0.92rem;
+            }
             .gc-mentor {
                 flex-direction: column;
                 text-align: center;
@@ -394,12 +504,13 @@
                 justify-content: center;
                 padding: 16px 24px;
             }
-            .gc-pricing { padding: 56px 0; }
-            .gc-pricing-header h2 { font-size: 1.5rem; }
-            .gc-price-card { padding: 32px 24px; }
-            .gc-price-valor .numero { font-size: 4rem; }
-            .gc-price-valor .moeda,
-            .gc-price-valor .centavos { font-size: 1.5rem; margin-top: 10px; }
+            .gc-content { padding: 56px 0; }
+            .gc-content-header h2 { font-size: 1.5rem; }
+            .modal-card {
+                padding: 28px 20px;
+                border-radius: 16px;
+            }
+            .modal-title { font-size: 1.2rem; }
         }
     </style>
 </head>
@@ -412,18 +523,25 @@
         </div>
         <div class="container">
             <div class="gc-hero-inner">
-                <div class="gc-badge">WorkShop Solar 200k — Mentoria Estratégica Solar</div>
+                <div class="gc-badge">WorkShop Solar 200k — Evento Online e Gratuito</div>
+
+                <div class="gc-free-badge">100% Gratuito</div>
 
                 <h1>O mapa para faturar <span>R$ 100k a R$ 200k/mês</span> no solar — sem depender das indicações.</h1>
 
                 <p class="gc-hero-sub">A maioria dos integradores trava nos mesmos <strong>30 a 50 mil por mês</strong> porque tenta crescer sem estratégia. Neste WorkShop Solar 200k, <strong>Daniel Saka</strong> revela o método de 5 passos que usou para ultrapassar 12 milhões em faturamento no setor — e como você aplica isso no seu negócio solar.</p>
 
+                <div class="gc-date-badge">
+                    <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg>
+                    <span>14 de Abril de 2026 — Online e Ao Vivo</span>
+                </div>
+
                 <img src="workshop-solar-hero.png" alt="Workshop Solar — R$ 100k a R$ 200k/mês" class="gc-hero-img">
 
-                <a href="#investimento" class="btn-hero" onclick="fbq('track','InitiateCheckout')">
-                    Quero o WorkShop Solar 200k por R$ 19,90
+                <button class="btn-hero" id="btnInscricao" onclick="abrirModal()">
+                    Se inscrever gratuitamente
                     <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
-                </a>
+                </button>
 
                 <div style="margin-top: 40px;"></div>
 
@@ -453,13 +571,13 @@
         </div>
     </section>
 
-    <!-- DOBRA 2: Pricing + CTA -->
-    <section class="gc-pricing" id="investimento">
+    <!-- DOBRA 2: O que voce vai aprender -->
+    <section class="gc-content" id="conteudo">
         <div class="container">
-            <div class="gc-pricing-inner">
-                <div class="gc-pricing-header reveal">
-                    <h2>Acesse o WorkShop Solar 200k agora</h2>
-                    <p>A mentoria estratégica que custa menos que um almoço — e pode mudar o patamar do seu negócio solar.</p>
+            <div class="gc-content-inner">
+                <div class="gc-content-header reveal">
+                    <h2>O que você vai aprender neste Workshop</h2>
+                    <p>Conteúdo prático e direto ao ponto para transformar o seu negócio solar.</p>
                 </div>
 
                 <ul class="gc-deliverables reveal">
@@ -477,26 +595,15 @@
                     </li>
                     <li>
                         <div class="gc-del-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></div>
-                        Acesso imediato após o pagamento
+                        Evento ao vivo — tire suas dúvidas em tempo real
                     </li>
                 </ul>
 
-                <div class="gc-price-card reveal">
-                    <div class="gc-price-de">De <span>R$ 197,00</span></div>
-                    <div class="gc-price-label">Por apenas</div>
-                    <div class="gc-price-valor">
-                        <span class="moeda">R$</span>
-                        <span class="numero">19</span>
-                        <span class="centavos">,90</span>
-                    </div>
-                    <div class="gc-price-obs">Pagamento único</div>
-                    <a href="https://pay.lowify.com.br/checkout?product_id=2ix8oi" class="gc-price-cta" onclick="fbq('track','InitiateCheckout')">Quero Acesso ao WorkShop Solar 200k</a>
-                    <p class="gc-price-sub">Acesso imediato</p>
-                </div>
-
-                <div class="gc-garantia reveal">
-                    <div class="g-badge">7</div>
-                    <p><strong>Garantia de 7 dias.</strong> Se o WorkShop Solar 200k não fizer sentido pra você, devolvemos 100% do valor. Sem perguntas.</p>
+                <div class="gc-cta-bottom reveal">
+                    <button class="btn-hero" onclick="abrirModal()">
+                        Garantir minha vaga gratuita
+                        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:var(--dark)"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -509,6 +616,192 @@
         </div>
     </footer>
 
+    <!-- MODAL DE INSCRICAO -->
+    <div class="modal-overlay" id="modalInscricao">
+        <div class="modal-card">
+            <button class="modal-close" onclick="fecharModal()">&times;</button>
+
+            <h2 class="modal-title">Inscreva-se no Workshop Solar 200k</h2>
+            <p class="modal-subtitle"><strong>14 de Abril de 2026</strong> — Online, ao vivo e 100% gratuito</p>
+
+            <form id="formInscricao" onsubmit="return enviarInscricao(event)">
+                <div class="form-group">
+                    <label for="inputNome">Seu nome completo</label>
+                    <input type="text" id="inputNome" name="nome" placeholder="Ex: João Silva" required autocomplete="name">
+                    <div class="form-error">Preencha seu nome</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEmail">Seu melhor e-mail</label>
+                    <input type="email" id="inputEmail" name="email" placeholder="Ex: joao@email.com" required autocomplete="email">
+                    <div class="form-error">Preencha um e-mail válido</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputTelefone">WhatsApp (com DDD)</label>
+                    <input type="tel" id="inputTelefone" name="telefone" placeholder="(11) 99999-9999" required autocomplete="tel">
+                    <div class="form-error">Preencha um telefone válido</div>
+                </div>
+
+                <button type="submit" class="btn-submit" id="btnSubmit">
+                    <span class="btn-text">Se inscrever gratuitamente</span>
+                    <div class="spinner"></div>
+                </button>
+            </form>
+
+            <p class="modal-privacy">Seus dados estão seguros. Não enviamos spam.</p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script>
+    // ============================================
+    // GOOGLE APPS SCRIPT URL
+    // IMPORTANTE: Substitua pela URL do seu deploy
+    // ============================================
+    var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwQ4qIxbCLLLxNkKCD3ls8qmuXAFLj4wydOxS17BYqB75-D3KQjU7I_w5fuMK_fRLfmvQ/exec';
+
+    // ============================================
+    // MODAL
+    // ============================================
+    function abrirModal() {
+        document.getElementById('modalInscricao').classList.add('active');
+        document.body.style.overflow = 'hidden';
+        fbq('track', 'Lead');
+        setTimeout(function() {
+            document.getElementById('inputNome').focus();
+        }, 300);
+    }
+
+    function fecharModal() {
+        document.getElementById('modalInscricao').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Fechar modal clicando fora
+    document.getElementById('modalInscricao').addEventListener('click', function(e) {
+        if (e.target === this) fecharModal();
+    });
+
+    // Fechar com ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') fecharModal();
+    });
+
+    // ============================================
+    // MASCARA DE TELEFONE
+    // ============================================
+    var inputTelefone = document.getElementById('inputTelefone');
+
+    inputTelefone.addEventListener('input', function(e) {
+        var value = e.target.value.replace(/\D/g, '');
+
+        if (value.length > 11) value = value.slice(0, 11);
+
+        if (value.length > 0) {
+            if (value.length <= 2) {
+                value = '(' + value;
+            } else if (value.length <= 7) {
+                value = '(' + value.slice(0,2) + ') ' + value.slice(2);
+            } else {
+                value = '(' + value.slice(0,2) + ') ' + value.slice(2,7) + '-' + value.slice(7);
+            }
+        }
+
+        e.target.value = value;
+    });
+
+    // Impedir colagem de caracteres nao numericos
+    inputTelefone.addEventListener('paste', function(e) {
+        e.preventDefault();
+        var text = (e.clipboardData || window.clipboardData).getData('text');
+        var cleaned = text.replace(/\D/g, '').slice(0, 11);
+        if (cleaned.length >= 10) {
+            this.value = '(' + cleaned.slice(0,2) + ') ' + cleaned.slice(2,7) + '-' + cleaned.slice(7);
+        }
+    });
+
+    // ============================================
+    // VALIDACAO E ENVIO
+    // ============================================
+    function validarTelefone(telefone) {
+        var numeros = telefone.replace(/\D/g, '');
+        return numeros.length >= 10 && numeros.length <= 11;
+    }
+
+    function validarEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    function enviarInscricao(event) {
+        event.preventDefault();
+
+        var nome = document.getElementById('inputNome').value.trim();
+        var email = document.getElementById('inputEmail').value.trim();
+        var telefone = document.getElementById('inputTelefone').value.trim();
+        var btn = document.getElementById('btnSubmit');
+
+        // Reset erros
+        document.querySelectorAll('.form-group input').forEach(function(el) {
+            el.classList.remove('error');
+        });
+
+        var hasError = false;
+
+        if (!nome || nome.length < 2) {
+            document.getElementById('inputNome').classList.add('error');
+            hasError = true;
+        }
+
+        if (!validarEmail(email)) {
+            document.getElementById('inputEmail').classList.add('error');
+            hasError = true;
+        }
+
+        if (!validarTelefone(telefone)) {
+            document.getElementById('inputTelefone').classList.add('error');
+            hasError = true;
+        }
+
+        if (hasError) return false;
+
+        // Loading state
+        btn.disabled = true;
+        btn.classList.add('loading');
+
+        var payload = {
+            action: 'register',
+            nome: nome,
+            email: email,
+            telefone: telefone
+        };
+
+        fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain' },
+            body: JSON.stringify(payload)
+        })
+        .then(function() {
+            // Salvar email no localStorage para a pagina de obrigado
+            localStorage.setItem('workshop_email', email);
+            localStorage.setItem('workshop_nome', nome);
+
+            fbq('track', 'CompleteRegistration');
+
+            // Redirecionar para pagina de obrigado
+            window.location.href = 'obrigado-workshop.html';
+        })
+        .catch(function(err) {
+            console.error('Erro ao enviar:', err);
+            // Mesmo com erro de CORS (no-cors), os dados sao enviados
+            localStorage.setItem('workshop_email', email);
+            localStorage.setItem('workshop_nome', nome);
+            window.location.href = 'obrigado-workshop.html';
+        });
+
+        return false;
+    }
+    </script>
 </body>
 </html>
